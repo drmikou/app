@@ -28,7 +28,7 @@
                                     <dd>
                                         <ul>
                                             <li>Offres</li>
-                                            <li>Echanges</li>
+                                            <li><a href="trade.html"> Echanges </a></li>
                                         </ul>
                                     </dd>
                                 </dl>
