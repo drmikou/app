@@ -254,6 +254,7 @@
     /* Barre de menus */
     nav
     {
+        position: absolute;
     	font-size: 1em;
         display: inline-block;
         width: 100%;
