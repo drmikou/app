@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
 	<aside>
 
 		<div id="Nos_Produits">
@@ -13,5 +12,3 @@
 		</div>
 
 	</aside>
-
-</html>
