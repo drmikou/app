@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 
 	<header>
 
@@ -80,5 +78,3 @@
                 </nav>
 
 	</header>
-
-</html>
