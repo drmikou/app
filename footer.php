@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 
 	<footer>
 
@@ -16,5 +14,3 @@
 		</div>
 
 	</footer>
-
-</html>
