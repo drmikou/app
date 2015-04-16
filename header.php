@@ -15,55 +15,50 @@
 		<nav>
                         <div id="conteneur_menu">
                             <div id="menu">
-                                <dl>
-                                    <dt><a href="home.php">Accueil</a></dt>
-
-                                </dl>
                                 
                                 <!-- Page d'achats -->
-                                <dl>
-                                    <dt><a href="trade.php"> Echanges </a></dt>  
-                                </dl>
+	                                <dl>
+	                                    <dt><a href="trade.php"> Echanges </a></dt>  
+	                                </dl>
                                 
                                 <!-- Page de recettes -->         
-                                <dl>
-                                    <dt><a href="recette.php">Recettes</a></dt>
-                                        <dd>
-                                            <ul>
-                                                <li>Top des recettes</li>
-                                                <li>Les recettes</li>
-                                            </ul>
-                                        </dd>
-                                </dl>
+	                                <dl>
+	                                    <dt><a href="recette.php">Recettes</a></dt>
+	                                        <dd>
+	                                            <ul>
+	                                                <li>Top des recettes</li>
+	                                                <li>Les recettes</li>
+	                                            </ul>
+	                                        </dd>
+	                                </dl>
                                 
                                 <!-- Fruits et légumes -->
-                                <dl>
-                                    <dt><a href="#">Fruits et Légumes</a></dt>
-                                </dl>
+					<dl>
+	                                    <dt><a href="#">Fruits et Légumes</a></dt>
+	                                </dl>
                                   
                                 <!-- Profil -->
-                                    <dl>
-                                        <dt><a href="#">Profil</a></dt>
-                                        <dd>
-                                            <ul>
-                                                <li>Mon profil</li>
-                                                <li>Mes messages</li> 
-                                            </ul>
-                                        </dd>
-                                    </dl>
+					<dl>
+						<dt><a href="#">Profil</a></dt>
+	                                        <dd>
+	                                            <ul>
+	                                                <li>Mon profil</li>
+	                                                <li>Mes messages</li> 
+	                                            </ul>
+	                                        </dd>
+                                	</dl>
                                 
                                 <!-- Forum -->
-                                    <dl>
-                                        <dt><a href="#">Forum</a></dt>
-                                    </dl>
+					<dl>
+						<dt><a href="#">Forum</a></dt>
+					</dl>
                                 
                                  <!-- Connexion -->
-                                <dl>
-                                    <dt><a href="connexion.php">Connexion</a></dt>
-                                </dl>
+					<dl>
+	                                    <dt><a href="connexion.php">Connexion</a></dt>
+	                                </dl>
                                 
                             </div>
                         </div>
                 </nav>
-
 	</header>
