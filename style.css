@@ -63,7 +63,7 @@
     }
 
 
-/* ------------------- Header ------------------- */
+/* ---  ---------------- Header ------------------- */
     
     /* Fond du titre*/
     header
@@ -135,10 +135,12 @@
     padding: 2px; 
     margin: 0px}
 
-  li.menu_deroulant:hover {background-color: #FFFF70;}
+  li.menu_deroulant:hover{
+      background-color: #FFFF70;
+  }
 
-  li.menu_deroulant:hover ul.niveau2 , li.menu_deroulant li.plus.1:hover ul.niveau3.1,/*li.menu_deroulant li.plus.2:hover ul.niveau3.2 */
-  {display: block}
+ /* li.menu_deroulant:hover ul.niveau2 , li.menu_deroulant li.plus.1i:hover ul.niveau3.1,/*li.menu_deroulant li.plus.2:hover ul.niveau3.2
+  {display: block}*/
 
   li.plus {
     background-position:right;
@@ -148,16 +150,13 @@
     box-shadow: 0px 1px 2px #1c1a19;
     margin-bottom: 0px;}
   
-
   /*#tableau_echange{
     width:5000px; 
     height:2500px;*/
-    
 
-    input.taille_barre
-    {width:50px}
-
-  
+    input.taille_barre{
+        width:50px
+    }
 
     #conteneur_menu{
     display: block;
@@ -168,7 +167,6 @@
   #menu{
     position: absolute;
       }
-
 
   #menu dl{
     width:160px;
@@ -189,8 +187,7 @@
     cursor:pointer;
   }
 
-  #menu dt :hover,
-  {
+  #menu dt :hover{
     color: #760001;
   }
 
@@ -254,7 +251,6 @@
     /* Barre de menus */
     nav
     {
-        position: absolute;
     	font-size: 1em;
         display: inline-block;
         width: 100%;
