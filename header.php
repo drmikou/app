@@ -22,18 +22,12 @@
                                 
                                 <!-- Page d'achats -->
                                 <dl>
-                                    <dt><a href="Page d'achats.html">Achat direct</a></dt>
-                                    <dd>
-                                        <ul>
-                                            <li>Offres</li>
-                                            <li><a href="trade.html"> Echanges </a></li>
-                                        </ul>
-                                    </dd>
+                                    <dt><a href="trade.php"> Echanges </a></dt>  
                                 </dl>
                                 
                                 <!-- Page de recettes -->         
                                 <dl>
-                                    <dt><a href="Page recette.html">Recettes</a></dt>
+                                    <dt><a href="recette.php">Recettes</a></dt>
                                         <dd>
                                             <ul>
                                                 <li>Top des recettes</li>
@@ -45,11 +39,6 @@
                                 <!-- Fruits et légumes -->
                                 <dl>
                                     <dt><a href="#">Fruits et Légumes</a></dt>
-                                    <dd>
-                                        <ul>
-                                            <li>Ajouter des légumes</li>
-                                        </ul>
-                                    </dd>
                                 </dl>
                                   
                                 <!-- Profil -->
