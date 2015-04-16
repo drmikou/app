@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <title>vAt accueil</title>
     </head>
-
+    
+        <?php /*include("sql.php"); */?>
+    
     <body>
-
-		<!-- Header -->
-			<?php include("header.php"); ?>
-    	
-		<!-- Corps de la connexion-->
-            <section>
-                <article>
-                    <form method="GET" action="#">
-
-                        <table>
-                            <tr><td><h2>Login: </h2></td>
-                                <td><input type="text" value="" id="Imput_barre" name="pseudo"/></td>
-                            </tr>
-                            <tr><td><h2>Password: </h2></td>
-                                <td> <input type="password" value="" id="Imput_barre" name="password"/></td>
-                            </tr>
-                        </table><p>
-
-                        <input type="submit" value="Valider" id="bouton_valider"/></p>
-
-                    </form>
-                </article>
-            </section>
-
+	<!-- Header -->
+            <?php include("header.php"); ?>
+        
+	<!-- Corps de la connexion-->
+            <?php include("test.php"); ?>
+        
         <!-- Footer-->
             <?php include("footer.php"); ?>
         </div>
