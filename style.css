@@ -251,7 +251,6 @@
     /* Barre de menus */
     nav
     {
-    	font-size: 1em;
         display: inline-block;
         width: 100%;
         text-align: center;
@@ -272,7 +271,7 @@
     /* Ecriture menu + position surbrillance texte*/
     nav a
     {
-        font-size: 1.4em;
+        font-size: 1.3em;
         color: #181818;
         padding-bottom: 5px;
     	padding-left: 1px;
