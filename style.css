@@ -175,20 +175,19 @@
 
   #menu dl{
     width:160px;
-     display: block;
+    display: block;
     height:40px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     display: block;
     float: left;
-    
   }
 
   #menu dt{
     display: block;
     height:40px;
     line-height: 40px;
-    text-align: center;
+    //text-align: center;
     cursor:pointer;
   }
 
@@ -224,6 +223,7 @@
     line-height: 40px;
     cursor:pointer;
     overflow: visible;
+    
 
   }
 
@@ -354,7 +354,7 @@
     {
     	margin-top: 60px;
     	font-family: "QuickBook";
-    	font-size: 1.4em;
+    	font-size: 1.2em;
         display: inline-block;
         vertical-align: top;
         text-align: justify;
@@ -454,6 +454,22 @@ footer
 	width: 100%;
     /*background:  url('images/ico_top.png') no-repeat top center, *//*url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top*/
     
+}
+
+#colonne1, #colonne2
+{
+    display: inline-block;
+    vertical-align: top; font-size: 1.4em;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; width: 12%;
+}
+
+#colonne2
+{
+    width: 20%
 }
 
 footer p, footer ul, footer li
