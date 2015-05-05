@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
+   <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <title>vAt accueil</title>
@@ -13,15 +13,8 @@
 			<?php include("header.php"); ?>
     	
 		<!-- Corps de l'accueil-->
-			<div id="bloc_page">
-				<div id="banniere_image">
-
-					<div id="banniere_description">
-						Actualités du site
-						<a href="#" class="bouton_rouge">Voir <img src="images/ico_liensexterne.png" alt="" /></a>
-					</div>
-
-				</div>
+			<div id="bloc_page">    
+                            <?php include("news.php"); ?>
 			            
 				<section>
 
@@ -37,10 +30,10 @@
 					<!-- Aside-->
 						<?php include("aside.php"); ?>
 				</section>
-
+                        </div>
 				<!-- Footer-->
 					<?php include("footer.php"); ?>
-		</div>
+		
     </body>
 
 </html>
