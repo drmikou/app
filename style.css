@@ -39,7 +39,7 @@
     #bloc_page
     {
     	background: url('images/fond1.12.png');
-        width: 900px; /* +: plus large */
+        width: 80%; /* +: plus large */
         margin: auto;
         z-index: -1;
     }
@@ -60,6 +60,11 @@
     	font-color: red;
     	font-weight: normal;
         text-transform: uppercase;
+    }
+
+    p
+    {
+        padding
     }
 
 
@@ -160,8 +165,8 @@
 
     #conteneur_menu{
     display: block;
-    height: 40px;
-    position: relative;
+    height: 40px;   
+    position: relative; z-index:4;
 
   }
   #menu{
@@ -297,7 +302,7 @@
         box-shadow: 0px 1px 2px #1c1a19;
         margin-bottom: 25px;
     }
-
+    
     #banniere_description
     {
         position: absolute;
@@ -345,7 +350,7 @@
     }
 
     /* Position, police article */
-    article, aside
+    article, article2, aside
     {
     	margin-top: 60px;
     	font-family: "QuickBook";
@@ -353,7 +358,7 @@
         display: inline-block;
         vertical-align: top;
         text-align: justify;
-    	margin: 7px;
+    	margin: 2%;   
     	border-radius: 2px;
     	box-shadow: 0px 1px 2px #1c1a19;
     	margin-bottom: 25px;
@@ -361,18 +366,29 @@
         padding-right: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
-    	
     }
 
     /* Taille, fond article */
     article
     {
-        width: 80%;
+        width: 76%;
+        margin-right: 15px;
+    	background: url('images/fond1.8.png') ;
+    }
+    
+    article2
+    {
+        width: 100%;
         margin-right: 15px;
     	background: url('images/fond1.8.png') ;
     }
 
     article img
+    {
+        margin-left: 5px;
+    }
+    
+    article2 img
     {
         margin-left: 5px;
     }
@@ -387,6 +403,12 @@ article p
 {
     font-size: 0.8em;
 }
+
+article2 p
+{
+    font-size: 0.8em;
+}
+
 aside ul
 {
     list-style-type: none;
