@@ -11,9 +11,8 @@
                     </div>
                     
                     <div id='colonne2'>
-                        <li><a href="qui_sommes_nous.php">Qui sommes nous?</a></li>
                         <li><a href="faq.php">Foire aux questions</a></li>
-                        <li><a href="contacter.php">Nous contacter</a></li>
-                        <li><a href="conditions.php">Conditions générales d'utilisation</a></li>
+                        <li><a href="nous_contacter.php">Nous contacter</a></li>
+                        <li><a href="conditions_generales.php">Conditions générales d'utilisation</a></li>
                     </div>
 </footer>

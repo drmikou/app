@@ -1,20 +1,17 @@
 <?php
     session_start();
-    $titre = "Messages";
+    $titre = "Inscription";
     include("includes/start.php");
 ?>
     <body>
 		<div id="bloc_page">    
-			<!-- Corps de l'accueil-->	            
+			<!-- Corps de l'inscription'-->	            
 			<section>
 				<article>
-					<h1>Mes messages</h1>
+					<h1>Inscription</h1>
 					<p>les infos</p>
 					<p></p>
 				</article>
-
-				<!-- Aside-->
-				<?php include("includes/aside.php"); ?>
 			</section>
 		</div>
                 

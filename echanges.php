@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <title>vAt accueil</title>
-    </head>
-
+<?php
+    session_start();
+    $titre = "Echanges";
+    include("includes/start.php");
+?>
 
     <body>
-
-		<!-- Header -->
-			<?php include("header.php"); ?>
-    	
 		<!-- Corps de l'échange-->
             <div id="bloc_page">
 
@@ -71,8 +64,9 @@
                         
                 </section>
             </div>  
+            
         <!-- Footer-->
-            <?php include("footer.php"); ?>
+            <?php include("includes/footer.php"); ?>
 
     </body>
 

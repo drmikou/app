@@ -16,7 +16,7 @@
             <div id="menu">
                 <!-- Page d'achats -->
 	            <dl>
-	                <dt><a href="trade.php"> Echanges </a></dt>  
+	                <dt><a href="echanges.php"> Echanges </a></dt>  
 	            </dl>
                                 
                 <!-- Page de recettes -->         
@@ -54,8 +54,13 @@
                 <dl>
 	                <dt><a href="connexion.php">Connexion</a></dt>
 	            </dl>
+
+                <!-- Déconnexion -->
+                <dl>
+                    <dt><a href="deconnexion.php">Déconnexion</a></dt>
+                </dl>
                                  
-                <!-- Connexion -->
+                <!-- Panier -->
                 <dl>
 	                <dt><a href="panier.php">Panier</a></dt>
 	            </dl>

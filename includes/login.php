@@ -1,7 +1,7 @@
 <!-- CONNEXION A LA DB -->
 
 	<?php
-		include("includes/identifiants.php");?>
+		include("identifiants.php");?>
 
 <!-- CONSTANTES ET VARIABLES -->
 <?php
@@ -15,8 +15,8 @@
 		<!-- $_SERVER — Variables de serveur et d'exécution -->
 		<!-- REQUEST_URI' - L'URI qui a été fourni pour accéder à cette page. Par exemple : '/index.html'. -->
 <?php
-	echo '<h1>Connexion</h1>';
-	if ($id!=0) erreur(ERR_IS_CO);
+	//echo '<h1>Connexion</h1>';
+	//if ($id!=0) erreur(ERR_IS_CO);
 ?>
 
 <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
