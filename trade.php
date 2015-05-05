@@ -15,16 +15,9 @@
 		<!-- Corps de l'échange-->
             <div id="bloc_page">
 
-                <div id="banniere_image">
-                    <div id="banniere_description">
-                        Actualités du site
-                        <a href="Page panier.html" class="bouton_rouge">Voir Panier <img src="images/ico_liensexterne.png" alt="" /></a>
-                    </div>
-                </div>
-
                 <section>
 
-                    <article>
+                    <article2>
                         <h1> <img src="images/user.png" alt="Image flottante2" class="imageflottante"width="100" heigh="100"> User name</h1>
                         <p>numéro de l'offre: XXX</p>
                     
@@ -72,11 +65,12 @@
                                 </td>
                             </tr>
                         </table>
-                    </article>
+                    </article2>
                     
                     <!-- Aside-->
-                        <?php include("aside.php"); ?>
+                        
                 </section>
+            </div>  
         <!-- Footer-->
             <?php include("footer.php"); ?>
 
