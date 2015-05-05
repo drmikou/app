@@ -2,8 +2,8 @@
   /*****************************************
   *  Constantes et variables
   *****************************************/
-  define('LOGIN','Rasmus');  // Login correct
-  define('PASSWORD','lerdorf');  // Mot de passe correct
+  define('LOGIN','root');  // Login correct
+  define('PASSWORD','ok');  // Mot de passe correct
   $message = '';      // Message à afficher à l'utilisateur
  
   /*****************************************

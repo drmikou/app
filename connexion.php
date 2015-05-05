@@ -3,20 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-        <title>vAt accueil</title>
+        <title>Page de connexion</title>
+        <?php session_start(); ?>
     </head>
     
-        <?php /*include("sql.php"); */?>
-    
     <body>
-	<!-- Header -->
-            <?php include("header.php"); ?>
+	   <!-- Header -->
+        <?php include("header.php"); ?>
         
-	<!-- Corps de la connexion-->
-            <?php include("test.php"); ?>
-        
+        <!-- Corps de la connexion-->
+        <article>
+            <?php include("identifiants.php"); ?>
+            <?php include("login.php"); ?>
+        </article>
+
         <!-- Footer-->
-            <?php include("footer.php"); ?>
+        <?php include("footer.php"); ?>
         
     </body>
 

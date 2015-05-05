@@ -24,42 +24,42 @@
 	                <dt><a href="recette.php">Recettes</a></dt>
 	                    <dd>
 	                        <ul>
-	                            <li>Top des recettes</li>
+	                            <li>Top recettes</li>
 	                        </ul>
 	                    </dd>
 	            </dl>
                                 
                 <!-- Fruits et légumes -->
-                    <dl>
+                <dl>
 	                <dt><a href="#">Fruits et Légumes</a></dt>
 	            </dl>
                                   
                 <!-- Profil -->
-                    <dl>
-			<dt><a href="profil.php">Utilisateur</a></dt>
+                <dl>
+                    <dt><a href="profil.php">Utilisateur</a></dt>
 	                    <dd>
 	                        <ul>
 	                            <li><a href="messages.php">Mes messages</a></li>
 	                            <li><a href="parametre.php">Paramètres</a></li> 
 	                        </ul>
 	                    </dd>
-                    </dl>
+                </dl>
                                 
                 <!-- Forum -->
-                    <dl>
-			<dt><a href="#">Forum</a></dt>
-                    </dl>
+                <dl>
+                    <dt><a href="#">Forum</a></dt>
+                </dl>
                                 
                 <!-- Connexion -->
-                    <dl>
+                <dl>
 	                <dt><a href="connexion.php">Connexion</a></dt>
 	            </dl>
                                  
                 <!-- Connexion -->
-                    <dl>
+                <dl>
 	                <dt><a href="panier.php">Panier</a></dt>
 	            </dl>
-                                
+                            
             </div>
         </div>
     </nav>
