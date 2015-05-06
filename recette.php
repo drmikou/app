@@ -6,17 +6,9 @@
 
     <body>
         <div id="bloc_page">
-             <!-- Corps de recettes-->
+            <!-- Corps de recettes-->
             <section>
-   
-                <form method="get" action="search.php">
-                    <input type="text" placeholder="Saisir un ou des ingrédients" name="q" />
-                    <input type="submit" value="Recherche" id="bouton_valider"/>
-                </form>
-
-                <?php
-                    require"includes/database_connection.php";
-                ?> 
+               <?php include("includes/search.php");?>
 
                 <article>
                     <h1><img src="images/carotte.jpg" alt="Image flottante2" class="imageflottante"width="100" heigh="100" />La carotte dans tous ses etats !</h1>

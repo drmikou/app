@@ -1,7 +1,7 @@
 <!-- CONNEXION A LA DB -->
-
 	<?php
-		include("includes/identifiants.php");?>
+		include("includes/database_connection.php");
+	?>
 
 <!-- CONSTANTES ET VARIABLES -->
 <?php
