@@ -35,14 +35,14 @@
 						// si c'est le cas on se connecte à la base de donnée:
 						require"connection_database.php";
 
-						$reponse = $bdd->query('SELECT * FROM offres');// initialisation de la variable réponse
+						$reponse = $bdd->query('SELECT * FROM recette');// initialisation de la variable réponse
 
 						$q=$_GET['q'];  // On récupère tout le contenu de la barre de recherche:
 						$s=explode(" ",$q);// on divise ce contenu en mots
 
 
 						// On récupère tout le contenu de la table offres:
-						$request="SELECT * FROM offres ";
+						$request="SELECT * FROM recette ";
 						//$reponse = $bdd->query("SELECT * FROM offres");
 
 						// Si tout va bien, on peut continuer, tant qu'il y a des mots dans la chaine S on les ajoutent à notre requette PDO
@@ -61,12 +61,12 @@
 									$request=$request."OR ";
 								}
 								//$reponse=$reponse.$bdd->query("contenu LIKE '%$mot%' ");
-								$request=$request."contenu LIKE '%$mot%' ";
+								$request=$request."titre OR contenu LIKE '% $mot%' ";
 								$i=$i+1;
 						}
 					}
 
-					//echo "voila la requete ".$request;
+					echo "voila la requete ".$request;
 					?>
 
 					<?php
@@ -80,7 +80,21 @@
 						?>
 
 						<article>
-							<h1> <?php echo $donnees["nom_vendeur"]; ?></h1>
+							<?php 
+							$j=0;
+							$c2=$donnees["titre"];
+
+							foreach ($s as $mot) {
+
+								if(strlen($mot) > 3){
+
+									$j++;
+									if($j>4){$j=1;}
+									$c2= str_ireplace( $mot,'<span class="surlign'.$j.'">'.$mot.'</span>', $c2);
+								}
+							}
+							?>
+							<h1> <?php echo $c2; ?></h1>
 							<?php 
 							$i=0;
 							$c=$donnees["contenu"];
@@ -94,7 +108,6 @@
 									$c= str_ireplace( $mot,'<span class="surlign'.$i.'">'.$mot.'</span>', $c);
 								}
 							}
-
 							?>
 							<p> <?php echo $c; ?></p>
 						</article>
