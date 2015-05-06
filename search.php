@@ -81,7 +81,22 @@
 
 						<article>
 							<h1> <?php echo $donnees["nom_vendeur"]; ?></h1>
-							<p> <?php echo $donnees["contenu"]; ?></p>
+							<?php 
+							$i=0;
+							$c=$donnees["contenu"];
+
+							foreach ($s as $mot) {
+
+								if(strlen($mot) > 3){
+
+									$i++;
+									if($i>4){$i=1;}
+									$c= str_ireplace( $mot,'<span class="surlign'.$i.'">'.$mot.'</span>', $c);
+								}
+							}
+
+							?>
+							<p> <?php echo $c; ?></p>
 						</article>
 											
 						<?php
