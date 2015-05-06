@@ -152,7 +152,7 @@
      background-image: url(illustrations/fdroite.gif); 
      background-repeat: no-repeat; 
     border-radius: 2px;
-    box-shadow: 0px 1px 2px #1c1a19;
+/*    box-shadow: 0px 1px 1px #1c1a19;*/
     margin-bottom: 0px;}
   
   /*#tableau_echange{
@@ -261,7 +261,7 @@
         text-align: center;
     	background: url('images/fond1.8.png') ;
     	border-radius: 2px;
-    	box-shadow: 0px 1px 2px #1c1a19;
+	    	box-shadow: 0px 1px 1px #1c1a19;
     	margin-bottom: 0px;
         z-index: 1;
     }
@@ -299,7 +299,7 @@
         border-radius: 2px;
         background: url('images/bandeau.jpg') no-repeat;
         position: relative;
-        box-shadow: 0px 1px 2px #1c1a19;
+        box-shadow: 0px 1px 1px #1c1a19;
         margin-bottom: 25px;
     }
     
@@ -360,7 +360,7 @@
         text-align: justify;
     	margin: 2%;   
     	border-radius: 2px;
-    	box-shadow: 0px 1px 2px #1c1a19;
+    	box-shadow: 0px 1px 1px #1c1a19;
     	margin-bottom: 25px;
     	padding-top: 10px;
         padding-right: 10px;
@@ -371,7 +371,7 @@
     /* Taille, fond article */
     article
     {
-        width: 76%;
+        width: 73%;
         margin-right: 15px;
     	background: url('images/fond1.8.png') ;
     }
@@ -419,9 +419,9 @@ aside
    position: relative;
     width: 12%;
     background-color: #706b64;
-    box-shadow: 0px 1px 2px #1c1a19;;
+    box-shadow: 0px 1px 1px #1c1a19;
     border-radius: 2px;
-    padding: 5px;
+    padding: 10px;
     color: white;
     font-size: 0.9em;
 }
@@ -445,39 +445,45 @@ aside img
 
 footer
 {
-	padding-top: 25px;
 	background: url('images/fond1.11.png') ;
-	box-shadow: 0px 1px 2px #1c1a19;
-    border-radius: 5px;
-    padding: 50px;
+	box-shadow: 0px 1px 1px #1c1a19;
+	border-radius: 2px;
 	display: inline-block;
 	width: 100%;
-    /*background:  url('images/ico_top.png') no-repeat top center, *//*url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top*/
-    
+	color: black;
+}
+
+
+footer p, footer ul, footer li
+{	
+	font-family: Rumpelstiltskin;
+        font-size: 1em;
+	display: inline-block;
+
+}
+
+footer li
+{
+	list-style-type: circle;
 }
 
 #colonne1, #colonne2
 {
     display: inline-block;
-    vertical-align: top; font-size: 1.4em;
+    vertical-align: top;
     margin-bottom: 25px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px; width: 12%;
+/*    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left:  2px;*/
+    width: 10%;
+    margin-left: 50px;
 }
 
 #colonne2
 {
-    width: 20%
-}
-
-footer p, footer ul, footer li
-{	
-	font-family: Rumpelstiltskin;
-    font-size: 0.8em;
-	list-style-type: none;
-	display: inline-block;
+	padding-top: 50px;
+	width: 18%
 }
 
 #Nos_Produits img
@@ -545,13 +551,6 @@ footer p, footer ul, footer li
     width: 30000px;
   }
 
-div#colonne1{
-
-}
-
-div#colonne2{
-
-}
 /* ----------- surlignage fonction de recherche ----------- */
 
 span.surlign2{
