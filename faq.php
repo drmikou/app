@@ -65,55 +65,55 @@
             <div id="produit">
                 <article2>
                     <b><u>Je ne trouve pas le produit souhaité, est-il possible d’élargir mon champ de recherche à une autre géolocalisation ?</u></b>
-                    <br><br>
+                    <br>Il est possible de changer votre zone de vente/achat dans les paramètres de votre compte.<br>
                 </article2>
             </div>
         
             <div id="demenager">
                 <article2>
                     <b><u>J’ai déménagé, où puis-je changer mon adresse ?</u></b>
-                    <br><br>
+                    <br>Vous pouvez changer les informations relatives à votre compte dans les paramètres de ce dernier.<br>
                 </article2>
             </div>
 
             <div id="forum">
                 <article2> <b><u>Comment poster une annonce sur le forum/chat ?</u></b>
-                    <br><br>
+                    <br>Pour poster un message, vous devez être inscrit sur le site. Allez ensuite dans la rubrique forum où un case “Poster” sera à votre disposition. Pour communiquer dans le chat, vous avez juste à cliquer dans le champ : “Ecrivez votre message”<br>
                 </article2>
             </div>
 
             <div id="pirate">
                 <article2>
                     <b><u>Mon compte a été piraté et le(s) pirate(s) ont effectué plusieurs achats/ventes à mon insu, que puis-je faire ?</u></b>
-                    <br><br>
+                    <br>Si votre compte a été piraté, changez immédiatement votre mot de passe. Si vous ne pouvez pas le récupérer et que votre compte reste actif, nous vous invitons à nous contacter en allant dans la rubrique “Comment nous contacter ?”<br>
                 </article2>
             </div>
 
             <div id="banni">
                 <article2>
                     <b><u>Mon compte a été banni, puis-je en créer un autre ? </u></b>
-                    <br><br>
+                    <br>Il vous est en effet possible de recréer un compte. Nous vous invitons cependant à ne pas réitérer les actions qui ont conduit à le suppression de votre ancien compte.<br>
                 </article2>    
             </div>
 
            <div id="zones">
                 <article2>
                     <b><u>Je n’arrive pas à vendre dans ma région, puis-je diffuser mon annonce à des zones plus éloignées ?</u></b>
-                    <br><br>
+                    <br>Vous pouvez étendre votre zone de vente dans vos paramètres de compte.<br>
                 </article2>       
             </div>
 
            <div id="annuler">
                 <article2>
                     <b><u>Je veux annuler un achat ou une vente, comment puis-je faire ?</u></b>
-                    <br><br>
+                    <br>24H après l’achat ou la vente d’un produit, l’annulation est impossible. Vous pouvez cependant contacter le vendeur/acheteur pour voir si un recours est possible.<br>
                 </article2>
             </div>
 
             <div id="livraison">
                 <article2>
                     <b><u>Puis-je avoir plusieurs adresses de livraison ?</u></b>
-                    <br><br>
+                    <br>Il est en effet possible d'avoir plusieurs adresses au sein des informations de votre compte. Vous devrez cependant indiquer celle où vous souhaitez vous faire livrer.<br>
                 </article2>       
             </div>
         
