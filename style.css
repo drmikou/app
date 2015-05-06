@@ -552,3 +552,24 @@ div#colonne1{
 div#colonne2{
 
 }
+/* ----------- surlignage fonction de recherche ----------- */
+
+span.surlign2{
+    font-style: italic;;
+    background-color: #ffff00;
+}
+
+span.surlign4{
+    font-style: italic;;
+    background-color: #ff99ff;
+}
+
+span.surlign3{
+    font-style: italic;;
+    background-color: #ff9999;
+}
+
+span.surlign1{
+    font-style: italic;;
+    background-color: #9999ff;
+}
