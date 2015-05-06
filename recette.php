@@ -9,6 +9,17 @@
 
                 <!-- Corps de recettes-->
                 <section>
+                    
+                    <form method="get" action="search.php">
+                        <input type="text" placeholder="Saisir un ou des ingrédients" name="q" />
+                        <input type="submit" value="chercher votre recette" id="bouton_valider"/>
+                    </form>
+
+                        
+                    <?php
+                    require"connection_database.php";
+
+                    ?> 
                     <article>
                         <h1><img src="images/carotte.jpg" alt="Image flottante2" class="imageflottante"width="100" heigh="100" />La carotte dans tous ses etats !</h1>
                         <p>En entrée, en accompagnement ou même en thème principal, découvrer toutes nos recettes de carote!!</p>
