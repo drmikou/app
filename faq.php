@@ -117,11 +117,11 @@
                 </article2>       
             </div>
         
-        <p><center><a href="#bloc_page"> Revenir en haut de la page </p></center></a>
+            <p><center><a href="#bloc_page"> Revenir en haut de la page </p></center></a>
         </div>
-
+    </body>  
         <!-- Footer-->
             <?php include("includes/footer.php"); ?>
 
-    </body>   
+     
 </html>

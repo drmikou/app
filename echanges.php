@@ -22,14 +22,8 @@
                                         <tr>
                                             <td> <input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px; " /> </td>
                                             <td> <input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /> </td>
-
-                                            <td> <input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px;" /></td>
-                                            <td> <input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /> </td>
                                         </tr>
                                         <tr>
-                                            <td> <input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px;" /></td>
-                                            <td> <input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /> </td>
-
                                             <td> <input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px;" /></td>
                                             <td> <input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /> </td>
                                         </tr>
@@ -43,16 +37,11 @@
                                         <tr>
                                             <td><input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px;" /></td>
                                             <td><input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /></td>
-
-                                            <td ><input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px;" /></td>
-                                            <td><input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /></td>
                                         </tr>
                                         <tr>
                                             <td><input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px;" /></td>
                                             <td><input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /></td>
 
-                                            <td><input id="taillebarre" type="image" src="images/pomme.jpg" style="margin:10px; height:80px; border-radius:10px; box-shadow:0 0 15px 2px;" /></td>
-                                            <td><input id="taillebarre" type="number" min="0" max="10" value="" step="1" onkeypress="return false;" /></td>
                                         </tr>
                                     </table>
                                 </td>
