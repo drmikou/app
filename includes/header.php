@@ -1,16 +1,18 @@
 <header>
-    <a href="home.php">
-        <img  src="images/Logo.png" class="imageflottante" alt="logo" width="250" heigh="250" />
-    </a>
-                        
-    <div id="titre_principal">
-        <h1>
-            <a href="home.php">
-                Veg A table
-            </a>
-        </h1>
+    <div id="logo_titre">
+        <a href="home.php">
+            <img  src="images/Logo.png" class="imageflottante" alt="logo" id="logo" width="250" heigh="250" />
+        </a>
+                            
+        <div id="titre_principal">
+            <h1>
+                <a href="home.php">
+                    Veg A table
+                </a>
+            </h1>
+        </div>
     </div>
-
+    
     <?php // VISITEUR
         if($id==0)
         {
@@ -18,6 +20,7 @@
             <nav>
                 <div id="conteneur_menu">
                     <div id="menu">
+
                         <!-- Page d'achats -->
         	            <dl>
         	                <dt><a href="echanges.php"> Echanges </a></dt>  
