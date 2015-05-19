@@ -44,8 +44,8 @@
 								</fieldset>
 								
 								<fieldset><legend>Contacts</legend>
-									<label for="email">* Votre adresse Mail : </label><input type="text" name="email" id="email" /><br/>
-									<label for="phone">* Votre numéro de téléphone: </label><input type="text" name="phone" id="phone" /><br/>
+									<label for="email">* Votre adresse Mail : </label><input type="email" name="email" id="email" /><br/>
+									<label for="phone">* Votre numéro de téléphone: </label><input type="tel" name="phone" id="phone" /><br/>
 								</fieldset>
 
 
