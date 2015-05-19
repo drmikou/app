@@ -1,15 +1,17 @@
 <header>
-    <div id="logo_titre">
-        <a href="home.php">
-            <img  src="images/Logo.png" class="imageflottante" alt="logo" id="logo" width="250" heigh="250" />
-        </a>
-                            
-        <div id="titre_principal">
-            <h1>
-                <a href="home.php">
-                    Veg A table
-                </a>
-            </h1>
+    <div class="centrage">
+        <div id="logo_titre">
+            <a href="home.php">
+                <img  src="images/Logo.png" class="imageflottante" alt="logo" id="logo" width="200" heigh="200" />
+            </a>
+                                
+            <div id="titre_principal">
+                <h1>
+                    <a href="home.php">
+                        Veg A table
+                    </a>
+                </h1>
+            </div>
         </div>
     </div>
     
@@ -17,6 +19,7 @@
         if($id==0)
         {
     ?>
+        <div class="centrage">
             <nav>
                 <div id="conteneur_menu">
                     <div id="menu">
@@ -64,6 +67,7 @@
                     </div>
                 </div>
             </nav>
+        </div>
     <?php
         }
         else

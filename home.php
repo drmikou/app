@@ -4,22 +4,51 @@
 ?>
     <body>
 		<!-- Corps de l'accueil-->
-			<div id="bloc_page">    
-				<?php include("includes/news.php"); ?>
-			            
-				<section>
-					<article>
-						<h1>Qui sommes nous?</h1>
-							<p>
-								Une association à but non lucratif qui a pour objectif de mettre à disposition des habitants d'un quartier, 
-								d'une commune ou d'une ville, un site Web d'achat ou d'échange de fruits et légumes frais cultivés à proximité
-								de chez vous.
-							</p>
-					</article>
+			<div id="bloc_page"> 
 
-					<!-- Aside-->
-						<?php include("includes/aside.php"); ?>
-				</section>
+				<div class="information"> 
+
+						<section>
+							<div class="boite">
+								<h2 class="titre">Maecenas luctus lectus</h2>
+								<div class="contenu">
+									<p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum.</p>
+								</div>
+								<p class="bouton"><a href="#">More Details</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="boite">
+								<h2 class="titre">Maecenas luctus lectus</h2>
+								<div class="contenu">
+									<p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum.</p>
+								</div>
+								<p class="bouton"><a href="#">More Details</a></p>
+							</div>
+						</section>
+						
+						<section>
+							<div class="boite">
+								<h2 class="titre">Maecenas luctus lectus</h2>
+								<div class="contenu">
+									<p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum.</p>
+								</div>
+								<p class="bouton"><a href="#">More Details</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="boite">
+								<h2 class="titre">Forum</h2>
+								<div class="contenu">
+									<p>Le forum est désormais ouvert! Rejoignez notre communauté Veg A Table dès maintenant! Le forum est ouvert à tous, il vous permettra d'échanger toutes les informations dont vous avez besoin! </p>
+								</div>
+								<p class="bouton"><a href="#">More Details</a></p>
+							</div>
+						</section>
+				</div>
+
 			</div>
 
 			<!-- Footer-->
