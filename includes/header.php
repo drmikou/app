@@ -20,12 +20,22 @@
             <nav>
                 <div id="conteneur_menu">
                     <div id="menu">
-
+                        
+                        <!-- Page d'accueil -->
+                        <dl>
+                            <dt><a href='home.php'> Accueil </a></dt>
+                        </dl>
+                        
+                        <!-- Fruits et légumes -->
+                        <dl>
+        	                <dt><a href="#">Fruits et Légumes</a></dt>
+        	            </dl>
+                          
                         <!-- Page d'achats -->
         	            <dl>
         	                <dt><a href="echanges.php"> Echanges </a></dt>  
         	            </dl>
-                                        
+                          
                         <!-- Page de recettes -->         
         	            <dl>
         	                <dt><a href="recette.php">Recettes</a></dt>
@@ -34,17 +44,7 @@
         	                            <li>Top recettes</li>
         	                        </ul>
         	                    </dd>
-        	            </dl>
-                                        
-                        <!-- Fruits et légumes -->
-                        <dl>
-        	                <dt><a href="#">Fruits et Légumes</a></dt>
-        	            </dl>
-                                                              
-                        <!-- Forum -->
-                        <dl>
-                            <dt><a href="#">Forum</a></dt>
-                        </dl>
+        	            </dl>                                                            
                                                              
                         <!-- Panier -->
                         <dl>
@@ -55,6 +55,11 @@
                         <dl>
                             <dt><a href="connexion.php">Connexion</a></dt>
                         </dl>
+                         
+                         <!-- Inscription -->
+                         <dl>
+                             <dt><a href='inscription.php'>S'inscrire</a><dt>
+                         </dl>
                                     
                     </div>
                 </div>
@@ -120,3 +125,4 @@
         }
     ?>          
 </header>
+
