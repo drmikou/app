@@ -32,13 +32,13 @@
     body
     {
         font-family: 'Quick', Arial, sans-serif;/*Trebuchet MS*/
-        color: #181818;
+        margin:0px;
     }
 
     /* Colonnes cotées vide */
     #bloc_page
     {
-    	background: url('images/fond1.12.png');
+    	/*background: url('images/fond1.12.png');*/
         width: 80%; /* +: plus large */
         margin: auto;
         z-index: -1;
@@ -75,7 +75,7 @@
     /* Fond du titre*/
     header
     {
-    background: url('images/fond1.12.png');
+        background: url(images/img01.png) repeat;
     }
 
     /*
@@ -95,6 +95,7 @@
     	margin-left: 1%;
     	margin-bottom: 50px;
     	margin-top: 60px;
+        text-shadow: 0px 0px 0px #4CA66B;
     }
     
     header h1 a
@@ -265,7 +266,7 @@
     .information
     {
         overflow: hidden;
-        position:relative;
+        position: relative;
     }
     
     .information .boite
@@ -279,6 +280,7 @@
         margin-left: 3%;
         margin-top: 3%;
         margin-bottom: 3%; 
+        height: 18em;
     }
 
     .information .titre
@@ -293,9 +295,9 @@
 
     .information .contenu
     {
-        padding: 0.1em 0.5em 0.0em 1.5em;
-        position:relative;
-        max-height: 10em;
+        padding: 0em 0.5em 0.0em 1.0em;
+        position: relative;
+        height: 7em;
     }
 
     .information .bouton a

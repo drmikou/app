@@ -58,11 +58,6 @@
                         <dl>
                             <dt><a href="connexion.php">Connexion</a></dt>
                         </dl>
-                         
-                         <!-- Inscription -->
-                         <dl>
-                             <dt><a href='inscription.php'>S'inscrire</a><dt>
-                         </dl>
                                     
                     </div>
                 </div>

@@ -10,9 +10,9 @@
 
 						<section>
 							<div class="boite">
-								<h2 class="titre">Maecenas luctus lectus</h2>
+								<h2 class="titre">Top recette</h2>
 								<div class="contenu">
-									<p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum.</p>
+									<p>Venez découvrir les meilleures recettes de votre site!</p>
 								</div>
 								<p class="bouton"><a href="#">More Details</a></p>
 							</div>
@@ -42,7 +42,7 @@
 							<div class="boite">
 								<h2 class="titre">Forum</h2>
 								<div class="contenu">
-									<p>Le forum est désormais ouvert! Rejoignez notre communauté Veg A Table dès maintenant! Le forum est ouvert à tous, il vous permettra d'échanger toutes les informations dont vous avez besoin! </p>
+									<p>Rejoignez notre communauté Veg A Table dès maintenant! Le forum est ouvert à tous, il vous permettra d'échanger toutes les informations dont vous avez besoin! </p>
 								</div>
 								<p class="bouton"><a href="#">More Details</a></p>
 							</div>
