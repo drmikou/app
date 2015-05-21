@@ -1,26 +1,19 @@
-# app
 <!-- CONNEXION A LA DB -->
 	<?php
 		include("includes/database_connection.php");
 		header( 'content-type: text/html ; charset=UTF-8');
 	?>
 
-<!-- FORMULAIRE -->
-<form method="get" action="recherche.php">
-	Recherche:
-	<input type="text" name="barre_recherche"/>
-	<input type="submit" value="Recherche!"/>
-</form>
 
 <!-- RECHERCHE -->
 <?php
 	if (isset($_GET['barre_recherche']))	//On vérifie qu'il y a un contenu dans la barre de recherche:
-	{
-		$reponse = $db->query('SELECT * FROM recette');		// Initialisation de la variable réponse
+	{       $request='SELECT * FROM '.$table;               // On récupère tout le contenu de la table recette:
+		$reponse = $db->query($request);		// Initialisation de la variable réponse
 		$barre_recherche = $_GET['barre_recherche'];						// On récupère tout le contenu de la barre de recherche:
 		$s = explode(" ",$barre_recherche);								// On divise ce contenu en mots
-		$request = "SELECT * FROM ".$table;					// On récupère tout le contenu de la table recette:
-		echo $request;
+							
+		//echo $request; //affichage de la requete pour verifier si cela fonctionne
 
 		$i=0;
 		foreach($s as $mot)		// Parcours $s, incrémente $mot à chaque mot rencontré 
@@ -39,9 +32,8 @@
 				$i=$i+1;
 			}
 		}
-		echo $request;
-
-		$reponse = $db->query($request;);
+		//echo $request;
+		$reponse = $db->query($request);
 		$presence_reponse = 0;
 		while ($donnees = $reponse->fetch()){
 			$presence_réponse = 1;
@@ -49,7 +41,7 @@
 			<article>
 			<?php 
 				$j=0;
-				$c2=$donnees[$param1];
+				$c2=$donnees['titre'];
 				foreach ($s as $mot) {
 					if(strlen($mot) > 3){
 						$j++;
@@ -61,7 +53,7 @@
 				<h1> <?php echo $c2; ?></h1>
 			<?php 
 				$i=0;
-				$c=$donnees[$param2];
+				$c=$donnees['contenu'];
 				foreach ($s as $mot) {
 				if(strlen($mot) > 3){
 					$i++;
@@ -71,6 +63,20 @@
 				}
 			?>
 				<p> <?php echo $c; ?></p>
+                        <?php
+                        if($table== offre  || échange ){
+                        ?>
+                            <p><?php echo $donnees['prix']; ?></p>
+                            <p><?php echo $donnees['id']; ?></p>
+                            <img src="<?php echo $donnees['image']; ?>" alt="Image flottante2" class="imageflottante"width="100" heigh="100" />
+                        <?php 
+                        }
+                        if($table== recette ){
+                        ?>   
+                            <img src="<?php echo $donnees['image']; ?>" alt="Image flottante2" class="imageflottante"width="100" heigh="100" />
+                        <?php 
+                        }
+                        ?>
 			</article>
 											
 			<?php
