@@ -1,22 +1,12 @@
-# app
-<?php
-    session_start();
-    $titre = "Recherche";
-    include("includes/start.php");
-?>
-    <body>
-
-        <article2>
-           <?php$table='recette';
-                $param1='titre';
-                $param2='contenu';
-                 include("includes/search.php"); 
-            ?>
-        </article2>
-            <!-- Footer-->
-         <?php include("includes/footer.php"); ?>
-        
-
-    </body>
-
-</html>
+ <article2>
+ <!-- FORMULAIRE -->
+    <form method="get" action="recherche.php">
+      Recherche:
+      <input type="text" name="barre_recherche"/>
+      <input type="submit" value="Recherche!"/>
+     </form> 
+         <?php
+            $table=$titre;
+            include("includes/search.2.php"); 
+        ?>
+ </article2>
