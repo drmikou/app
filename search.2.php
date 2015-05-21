@@ -1,8 +1,8 @@
 <!-- CONNEXION A LA DB -->
-	<?php
-		include("includes/database_connection.php");
-		header( 'content-type: text/html ; charset=UTF-8');
-	?>
+<?php
+	include("includes/database_connection.php");
+	header( 'content-type: text/html ; charset=UTF-8');
+?>
 
 
 <!-- RECHERCHE -->
