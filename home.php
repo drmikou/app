@@ -48,9 +48,7 @@
 							</div>
 						</section>
 				</div>
-
-			</div>
-
+		</D
 			<!-- Footer-->
 				<?php include("includes/footer.php"); ?>
     </body>

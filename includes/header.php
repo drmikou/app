@@ -68,6 +68,7 @@
         else
         {
     ?>
+        <div class="centrage">
             <nav>
                 <div id="conteneur_menu">
                     <div id="menu">
@@ -120,6 +121,7 @@
                     </div>
                 </div>
             </nav> 
+        </div>
     <?php
         }
     ?>          

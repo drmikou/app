@@ -4,43 +4,31 @@
     include("includes/start.php");
 ?>
     <body>
-
-
 		<div id="bloc_page">
+            <h1>Votre compte</h1>
+
         	<!-- Côté du profil-->   
-                    <h1>Mon profil</h1>
-                    
-                    <div class="sidebar">
-                        
-                        <section>
-                            <div class="box">                          
-                                    <h2> Titre </h2>
-                                        <ul class="titre_list"> Sous Titre 1</ul>
-                                            <li> Contenu</li>
-                                            <li> Contenu 2</li>
-                                            <li> Contenu 3</li>
-                                            <li> Contenu 4</li>
-                                            <li> Contenu 5</li>
-                                        </ul>
-
-                            </div>
-                        </section>
-                        
-                        <section>
-                            <div class="box">                          
-                                    <h2> Titre </h2>
-                                        <ul class="titre_list"> Sous Titre 1</ul>
-                                            <li> Contenu</li>
-                                            <li> Contenu 2</li>
-                                            <li> Contenu 3</li>
-                                            <li> Contenu 4</li>
-                                            <li> Contenu 5</li>
-                                        </ul>
-
-                            </div>
-                        </section>
-                        
+            <div class="cote">
+                <section>
+                    <div class="box">                          
+                        <ul class="titre_list"> Communauté </ul>
+                            <li> Votre profil</li>
+                            <li> Tous vos commentaires </li>
+                            <li> Mes évaluations </li>
                     </div>
+                        </section>
+                        
+                <section>
+                    <div class="box">                          
+                        <ul class="titre_list"> Paramètre du compte </ul>
+                            <li> Mes informations </li>
+                            <li> Changer mes informations </li>
+                            <li> Gérer mes alertes</li>
+                            <li> Supprimer mon compte</li>
+                    </div>
+                </section>            
+            </div>
+
 		</div>
 
         <!-- Footer-->
