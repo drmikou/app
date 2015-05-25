@@ -26,7 +26,7 @@
 							<div class="boite">
 								<h2 class="titre">La FAQ</h2>
 								<div class="contenu">
-									<p>Cette foire aux questions répondra à toute vos interrogation!</p>
+									<p>Cette foire aux questions répondra à toute vos interrogations!</p>
 								</div>
 								<p class="bouton"><a href="#">Plus de détails</a></p>
 							</div>
