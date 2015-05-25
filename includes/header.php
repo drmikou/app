@@ -6,7 +6,7 @@
             </a>
                                 
             <div id="titre_principal">
-                <h1>
+                <h1>    
                     <a href="home.php">
                         Veg A table
                     </a>
@@ -94,7 +94,7 @@
                                           
                         <!-- Profil -->
                         <dl>
-                            <dt><a href="profil.php"><?php echo $pseudo ?></a></dt>
+                            <dt><a href="mon_profil.php"><?php echo $pseudo ?></a></dt>
                                 <dd>
                                     <ul>
                                         <li><a href="messages.php">Mes messages</a></li>

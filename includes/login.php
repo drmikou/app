@@ -63,6 +63,7 @@
 					$message = 'Bienvenue '. $data['user_login'] .' ! Vous êtes maintenant connecté sur notre communauté!';			// Identification réussit
 					$_SESSION['pseudo'] = $data['user_login'];
 	    			$_SESSION['id'] = $data['user_id'];
+	    			header('Location: home.php');  
 				}
 				else
 				{

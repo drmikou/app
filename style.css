@@ -42,11 +42,13 @@
     /* Colonnes cotées vide */
     #bloc_page
     {
-    	/*background: url('images/fond1.12.png');*/
         width: 80%; /* +: plus large */
         margin: auto;
         z-index: -1;
         font-size: 0.9em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
     }
 
     /* Titres articles */
@@ -97,7 +99,6 @@
         font-weight: normal;
     	text-align: center;
     	margin-left: 1%;
-    	margin-bottom: 50px;
     	margin-top: 60px;
         text-shadow: 0px 0px 0px #4CA66B;
     }
@@ -135,46 +136,10 @@
     }
     
 /* ------------- Menu déroulant -------------*/
-    ul ul
-    {
-        display: none; 
-        position: absolute; 
-        left: 144px; 
-        top: -1px; 
-        padding: 0px; 
-        border: 1px solid #1c1a19;
-    }
-
-    li.menu_deroulant
-    {
-        list-style-type: none; 
-        position: relative; 
-        width: 160px; 
-        padding: 2px; 
-    }
-
-    li.menu_deroulant:hover
-    {
-      background-color: #FFF70;
-    }
-
-    li.plus
-    {
-        background-position: right;
-        background-image: url(illustrations/fdroite.gif); 
-        background-repeat: no-repeat; 
-        border-radius: 2px;
-        margin-bottom: 0px;
-    }
-  
-    input.taille_barre{
-        width:50px
-    }
 
     #conteneur_menu
     {
         display: inline-block;
-        height: 40px;   
         position: relative; 
         z-index:4;
     }
@@ -189,8 +154,7 @@
         width:160px;
         display: block;
         height:40px;
-        margin: 0%;
-        padding: 0%;
+        margin: 0;
         display: block;
         float: left;
     }
@@ -259,11 +223,16 @@
         float: left;
     }
 
-    #fronton #Banniere
-    {
-        position:relative;
-    } 
+/* --------- Image accueil --------- */
 
+    #home_image
+    {
+        position: relative;
+        display: inline-block;
+        margin-top: 0;
+        padding-top: 0;
+
+    }
 
 /* --------- Informations --------- */
     
@@ -327,7 +296,7 @@
         text-align: center;
         background: #E6E296;
     	border-radius: 2px;
-	box-shadow: 0px 1px 1px #1c1a19;
+	   box-shadow: 0px 1px 1px #1c1a19;
     	margin-bottom: 0px;
         z-index: 1;
     }
@@ -379,11 +348,50 @@
     .cote .titre_list
     {
         font-size: 1.1em;
-    }
+    }   
     
     .cote li
     {
         margin-bottom: 0.5em;
+    }
+
+    .cote a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .cote a:hover
+    {
+        color: #008000;
+    }
+
+/* ----------- Information profil ----------- */
+
+    #profil_data
+    {
+        display: inline-block;
+        width: 70%;
+        padding-left: 1.5em;
+    }
+
+    #profil_data .titre
+    {
+        text-align: center;
+        padding-bottom: 2em;
+        font-size: 1.5em;
+    }
+
+    #profil_data .bloc
+    {
+        margin-left: 3%;
+        border-top:1px solid grey;
+        padding-top: 1em;
+    }
+
+    #profil_data .donnee
+    {
+        margin-left: 10%;
     }
 /* ----------- Bannière ----------- */
 

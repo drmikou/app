@@ -4,16 +4,13 @@
     include("includes/start.php");
 ?>
     <body>
-
+        <div id="bloc_page">
         <!-- Corps de la connexion-->
-        <article>
             <?php include("includes/login.php"); ?>
-        </article>
+        
 
-        <article>
             <a href="inscription.php">S'inscrire</a>
-        </article>
-
+        </div>
         <!-- Footer-->
         <?php include("includes/footer.php"); ?>
         
