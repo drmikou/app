@@ -36,7 +36,7 @@
                           
                         <!-- Page d'achats -->
         	            <dl>
-        	                <dt><a href="echanges.php"> Echanges </a></dt>  
+        	                <dt><a href="choisir.php"> Echanges </a></dt>  
         	            </dl>
                           
                         <!-- Page de recettes -->         
