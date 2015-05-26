@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $titre = "Echanges";
+    $titre = "Ajouter";
     include("includes/start.php");
 ?>
 
