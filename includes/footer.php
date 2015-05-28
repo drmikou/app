@@ -32,7 +32,7 @@
         <section>
           <h2>Nous Contacter</h2>
           <p><strong>Phone</strong>: 01 46 83 92 xx</p>
-          <p><strong>Email</strong>: vegatable@vegatable.Fr</p>
+          <p><strong>Email</strong>: vegatable@vegatable.fr</p>
           <p>&nbsp;</p>
           <p><strong>VegAtable</strong></p>
           <p>28 Rue Notre Dame des Champs</p>
@@ -43,7 +43,7 @@
   <div id="copyright">
     <div class="row">
       <div id="cadre-copyright">
-        <p>&copy; VegAtable |Design:Team VegAtable</p>
+        <p>&copy; VegAtable | Design : Team VegAtable</p>
       </div>
     </div>
   </div>
