@@ -1,10 +1,11 @@
-<!-- Côté de l'échange-->   
-    <div class="cote">
+<!-- Côté de l'échange-->  
+<script type="text/javascript" src="afficher_cacher_div.js"></script>
+    <div class="cote">  
         <section>
             <div class="box">                          
                 <ul class="titre_list"> Achats / ventes </ul>
-                    <li>    <a href="ajouter.php"> Ajouter un fruit / légume </a> </li>
-                    <li>    <a href="choisir.php"> Choisir un fruit / légume </a> </li>
+                    <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('ajouter');">Ajouter fruit / légume</span> </li>
+                    <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('choisir');">Choisir fruit / légume</span> </li>
             </div>
         </section>
                         
@@ -16,3 +17,4 @@
             </div>
         </section>            
     </div>
+
