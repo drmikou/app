@@ -1,18 +1,50 @@
-<footer>
-
-	<div id="images/reseaux_sociaux">
-                    
-                <div id='colonne1'>
-                        <ul>
-                            <li><a href="#"><img src="images/rss.png" alt="RSS" /></a></li>
-                            <li><a href="#"><img src="images/twitter.png" alt="Twitter" /></a></li>
-                            <li><a href="#"><img src="images/facebook.png" alt="Facebook" /></a></li>
-                        </ul>
-                    </div>
-                    
-                    <div id='colonne2'>
-                        <li><a href="faq.php">Foire aux questions</a></li>
-                        <li><a href="nous_contacter.php">Nous contacter</a></li>
-                        <li><a href="conditions_generales.php">Conditions générales d'utilisation</a></li>
-                    </div>
-</footer>
+<div id="footer">
+  <div class="cadre-footer">
+    <div id="footer-content">
+      <div id="box1">
+        <section>
+          <h2>Qui sommes nous?</h2>
+          <div id="cadre-image">
+			<img src="images/footer.jpg" class="imageflottante" alt="cuisine" id="image-footer" >
+		  </div>
+		  <p>VegAtable est LE site d'échange de fruit et légumes en ligne destiné aux particuliers. Ce site référence les utilisateurs près de chez vous afin de vous mettre en relation pour des échanges en mains propres!</p>
+        </section>
+      </div>
+      <div id="box2">
+        <section>
+          <ul>
+            <li>
+              <h2>Foire aux questions</h2>
+              <p><a href="#">Toutes vos questions sans réponses se trouvent ici en détail.</a></p>
+            </li>
+     		<li>
+              <h2>Conditions générales d'utilisation</h2>
+              <p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
+            </li>
+			<li>
+              <h2>Mentions légales</h2>
+              <p>C'est par <a href="#">ici</a></p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div id="box3">
+        <section>
+          <h2>Nous Contacter</h2>
+          <p><strong>Phone</strong>: 01 46 83 92 xx</p>
+          <p><strong>Email</strong>: vegatable@vegatable.Fr</p>
+          <p>&nbsp;</p>
+          <p><strong>VegAtable</strong></p>
+          <p>28 Rue Notre Dame des Champs</p>
+          <p>75006 Paris</p>
+        </section>
+      </div>
+    </div>
+  <div id="copyright">
+    <div class="row">
+      <div id="cadre-copyright">
+        <p>&copy; VegAtable |Design:Team VegAtable</p>
+      </div>
+    </div>
+  </div>
+</div>
