@@ -38,14 +38,26 @@
 								</fieldset>
 									
 								<fieldset><legend>Adresse</legend>
-									<label for="street">Rue : </label><input type="text" name="street" id="street" />
+									<label for="street">*Rue : </label><input type="text" name="street" id="street" />
 									<label for="sup">Complément d'adresse : </label><input type="text" name="sup" id="sup" /> <br/>
 									<label for="town">* Ville : </label><input type="text" name="town" id="town" />
+                                                                        <label for="Département">* Département : </label>
+                                                                            <select name="Région">
+                                                                                <?php
+                                                                                $reponse = $db->query('SELECT * FROM departement'); // requête sql "selectionne tout dans la table region"
+                                                                                        // On affiche chaque entrée une à une
+                                                                                        while ($donnees = $reponse->fetch()){
+                                                                                            $print='<option accesskey=""value="'.$donnees['departement_nom'].'">'.$donnees['departement_nom'].'</option>';
+                                                                                            echo $print;
+                                                                                        }
+                                                                                        $reponse->closeCursor(); // Termine le traitement de la requête
+                                                                                 ?>
+                                                                            </select>             
 								</fieldset>
 								
 								<fieldset><legend>Contacts</legend>
 									<label for="email">* Votre adresse Mail : </label><input type="email" name="email" id="email" /><br/>
-									<label for="phone">* Votre numéro de téléphone: </label><input type="tel" name="phone" id="phone" /><br/>
+									<label for="phone">Votre numéro de téléphone: </label><input type="tel" name="phone" id="phone" /><br/>
 								</fieldset>
 
 
@@ -77,15 +89,17 @@
 						    $temps = time();
 						    $name = $_POST['name'];
 						    $surname = $_POST['surname'];
+                                                    $login = $_POST['login'];
 						    $birth = $_POST['birth'];
 						    $pseudo = $_POST['pseudo'];
 						    $password = $_POST['password'];
-						    $confirm = $_POST['confirm'];
 						    $street = $_POST['street'];
 						    $sup = $_POST['sup'];
 						    $town = $_POST['town'];
 						    $email = $_POST['email'];
 						    $phone = $_POST['phone'];
+                                                    
+                                                    
 						}
 
 					    // Vérification du pseudo
@@ -103,6 +117,8 @@
 					
 		<!-- Footer-->
 		<?php include("includes/footer.php"); ?>	
+                
+                
 		
     </body>
 </html>
