@@ -1,9 +1,12 @@
 <!-- Côté du profil-->   
+
+    <script type="text/javascript" src="afficher_cacher_div.js"></script>
+
     <div class="cote">
         <section>
             <div class="box">                          
                 <ul class="titre_list"> Communauté </ul>
-                    <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('mon_profil');">Mon profil public</span> </li>
+                    <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('mon_profil_public');">Mon profil public</span> </li>
                     <li> Tous vos commentaires </li>
                     <li> Mes évaluations </li>
             </div>
@@ -12,7 +15,7 @@
         <section>
             <div class="box">                          
                 <ul class="titre_list"> Paramètre du compte </ul>
-                    <li>    <a href="mes_informations.php"> Mes informations </a> </li>
+                    <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('mes_informations');">Mes informations</span> </li>
                     <li> Changer mes informations </li>
                     <li> Gérer mes alertes</li>
                     <li> Supprimer mon compte</li>

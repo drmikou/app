@@ -53,7 +53,7 @@
 			}
 			else
 			{	
-				$query = $db->prepare('SELECT user_id, user_login, user_password FROM user WHERE user_login= :login'); //PDO::prepare — Prépare une requête à l'exécution et retourne un objet
+				$query = $db->prepare('SELECT user_id, user_login, user_password, user_admin FROM user WHERE user_login= :login'); //PDO::prepare — Prépare une requête à l'exécution et retourne un objet
 				$query->bindValue('login',$_POST['login'], PDO::PARAM_STR); //PDOStatement::bindValue — Associe une valeur à un paramètre
 				$query->execute(array('login' => $_POST['login'])); // Exécute la préparation
 				$data = $query->fetch();
@@ -63,7 +63,13 @@
 					$message = 'Bienvenue '. $data['user_login'] .' ! Vous êtes maintenant connecté sur notre communauté!';			// Identification réussit
 					$_SESSION['pseudo'] = $data['user_login'];
 	    			$_SESSION['id'] = $data['user_id'];
-	    			header('Location: home.php');  
+	    			$_SESSION['admin'] = $data['user_admin'];
+	    			header('Location: home.php'); 
+
+	    			if( $data['user_admin'] == 1)
+	    			{
+	    				echo( 'Bonjour administrateur!!');
+	    			}
 				}
 				else
 				{

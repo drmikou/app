@@ -14,9 +14,8 @@
              Ma région : <br>     <div class="donnee"> <?php echo $data['user_region'] ?> </div> <br>
         </div>
 
-                <div class="bloc">
-              Ma photo : <br> <br>
+        <div class="bloc">
+            Ma photo : <br> <br>
         </div>
-
 
 </div>
