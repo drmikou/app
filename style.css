@@ -412,6 +412,10 @@
             margin-left: 3%;
             border-top:1px solid grey;
             padding-top: 1em;
+            position: relative;
+            left: 10%;
+            width: 80%;
+
         }
 
         #profil_data .donnee

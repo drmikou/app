@@ -3,7 +3,7 @@
         <section>
             <div class="box">                          
                 <ul class="titre_list"> Communauté </ul>
-                    <li>    <a href="mon_profil.php"> Mon profil public </a> </li>
+                    <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('mon_profil');">Mon profil public</span> </li>
                     <li> Tous vos commentaires </li>
                     <li> Mes évaluations </li>
             </div>

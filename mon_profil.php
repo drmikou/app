@@ -5,17 +5,26 @@
 ?>
 
 <body>
+
 	<div id="bloc_page">
         <h1>Votre compte</h1>
+    </div>
 
-        <!-- Côté du profil-->  
+    <!-- Côté du profil-->  
         <?php include("includes/aside_profil.php"); ?>
 
-        <!-- Mes informations --> 
-        <?php include("includes/database_profil.php"); ?>
+    <!-- Mes informations --> 
+    <?php include("includes/database_profil.php"); ?>
+
+    <div id="mon_profil">
         <?php include("includes/mon_profil.php"); ?>
-            
-	</div>
+    </div>   
+
+    <script type="text/javascript">
+        afficher_cacher('mon_profil');
+    </script> 
+
+	
 </body>
 
         <!-- Footer-->

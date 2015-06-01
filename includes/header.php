@@ -74,7 +74,7 @@
                     <div id="menu">
                         <!-- Page d'achats -->
                         <dl>
-                            <dt><a href="echanges.php"> Echanges </a></dt>  
+                            <dt><a href="echange.php"> Echanges </a></dt>  
                         </dl>
                                         
                         <!-- Page de recettes -->         
