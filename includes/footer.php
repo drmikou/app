@@ -15,11 +15,10 @@
           <ul>
             <li>
               <h2>Foire aux questions</h2>
-              <p><a href="#">Toutes vos questions sans réponses se trouvent ici en détail.</a></p>
+              <p><a href="faq.php">Toutes vos questions sans réponses se trouvent ici en détail.</a></p>
             </li>
      		<li>
-              <h2>Conditions générales d'utilisation</h2>
-              <p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
+              <h2><a href="condition_generales.php">Conditions générales d'utilisation</a></h2>
             </li>
 			<li>
               <h2>Mentions légales</h2>
