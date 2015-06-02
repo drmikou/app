@@ -21,8 +21,7 @@
               <h2><a href="condition_generales.php">Conditions générales d'utilisation</a></h2>
             </li>
 			<li>
-              <h2>Mentions légales</h2>
-              <p>C'est par <a href="#">ici</a></p>
+              <a href="#"><h2>Mentions légales</h2> </a>
             </li>
           </ul>
         </section>
