@@ -391,6 +391,30 @@
             margin-top: 1em;
         }
 
+	/*------------ CHAT -------------------------*/
+
+	#chat
+	{
+		max-height : 1%;
+		border:1px solid grey;
+		width : 90%;
+		background : #F5F5F5;	
+		padding : 3px;
+		margin-bottom : 10px;		
+		font-style : none;
+		font-weight: normal;
+	}
+
+	.pseudo_chat
+	{
+		font-size: 1.5em;
+	}
+	#saisie_chat textarea
+	{	
+		width : 90%;
+	}
+
+
     /* ----------- Information profil ----------- */
 
         #profil_data
