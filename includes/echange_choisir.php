@@ -15,9 +15,21 @@
                     g
             </p>
 
+        <div class="dropper">
+            <div class="draggable">#1</div>
+            <div class="draggable">#2</div>
+        </div>
+
+        <div class="dropper">
+            <div class="draggable">#3</div>
+            <div class="draggable">#4</div>
+        </div>
+
+
             <p>
                 <input type="submit" name="submit" value="Ajouter au panier" />
             </p>
+
     </fieldset>
     
 </form>
