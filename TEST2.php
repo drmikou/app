@@ -1,4 +1,26 @@
-<?php // Récupération des variables
+<!-- TRAITEMENT-->	  
+					<?php
+                                        }
+						else 
+						{	// Déclaration des variables 
+						    $pseudo_erreur1 = NULL;
+						    $pseudo_erreur2 = NULL;
+						    $mdp_erreur = NULL;
+						    $email_erreur1 = NULL;
+                                                    $email_erreur2 = NULL;
+                                                    $birth_erreur = NULL ;
+                                                    $street_erreur = NULL ; 
+                                                    $town_erreur = NULL ;
+                                                    $surname_erreur = NULL ;
+                                                    $name_erreur = NULL ;
+                                                    
+                                                    
+						}
+					?>	
+                                        
+                                      
+?>
+					<?php // Récupération des variables
 						if (!empty($_POST['name']) || !empty($_POST['surname']) || !empty($_POST['birth'])  )
 						{
 						    $i = 0;
