@@ -313,6 +313,51 @@
             color: #760001;
             border-bottom: 3px solid #760001;
         }
+
+    /* ----------- Affichage Voir membre ----------- */   
+
+    .bloc_membre_voir
+    {
+    }
+
+    .bloc_membre_voir #bloc_login
+    {
+        color: red;
+        border-bottom: 0.1em solid #808080;
+        width: 10%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+    }
+
+    .bloc_membre_voir #bloc_name, .bloc_membre_voir #bloc_surname, .bloc_membre_voir #bloc_mail
+    {
+        color: red;
+        border-bottom: 0.1em solid #808080;
+        width: 10%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+        margin-left: 5em;
+    }
+
+    .bloc_membre_voir .affichage_login
+    {
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        margin-top: 1em;
+    }
+
+    .bloc_membre_voir .affichage_name, .bloc_membre_voir .affichage_surname, .bloc_membre_voir .affichage_mail
+    {
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        margin-top: 1em;
+        margin-left: 5em;
+    }
+
     /* ----------- Coté page profil ----------- */
 
         .cote

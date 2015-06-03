@@ -15,6 +15,5 @@
             <p>
                 <input type="submit" name="submit" value="Afficher le(s) membre(s)" />
             </p>
-    </fieldset>
     
-</form>
+    
