@@ -5,9 +5,15 @@
         <div class="cote">  
             <section>
                 <div class="box">                          
-                    <ul class="titre_list"> Administration </ul>
-                        <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('ajouter');">Ajouter une actualité</span> </li>
-                        <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('choisir');">Supprimer un utilisateur</span> </li>
+                    <ul class="titre_list"> Actualités </ul>
+                        <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('actualite_ajouter');">Ajouter une actualité</span> </li>
+                        <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('actualite_supprimer');">Supprimer une actualité</span> </li>
+                </div>
+
+                <div class="box">                          
+                    <ul class="titre_list"> Membres </ul>
+                        <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('membre_voir');">Voir les membres</span> </li>
+                        <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('membre_supprimer');">Supprimer un utilisateur</span> </li>
                 </div>
             </section>
                                       

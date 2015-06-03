@@ -359,7 +359,7 @@
             color: #008000;
         }
 
-        #ajouter
+        #ajouter, #actualite_ajouter, #actualite_supprimer, #membre_voir
         {
             display: inline-block;
             margin-left: auto;
@@ -369,7 +369,7 @@
             z-index:1;
         }
 
-        #ajouter fieldset
+        #ajouter fieldset, #actualite_ajouter fieldset, #actualite_supprimer fieldset, #membre_voir fieldset
         {
             width: 50%;
             margin-top: 1em;

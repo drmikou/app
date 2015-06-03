@@ -9,7 +9,7 @@
 
             <p>
                 <label for="contenu">Contenu :</label> 
-                <textarea type="text" name="contenu" id="contenu" value=""></textarea>
+                <textarea type="text" name="contenu" id="contenu" value="" row="30" cols="120"></textarea>
             </p>
             
             <p>
