@@ -259,9 +259,9 @@ VegATable (y compris sa société mère, ses filiales, affiliés, dirigeants, ad
                 </article2>
             </div>
         </div>
-
+</body>
         <!-- Footer-->
         <?php include("includes/footer.php"); ?>
 
-    </body>
+    
 </html>

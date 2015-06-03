@@ -18,7 +18,7 @@
               <p><a href="faq.php">Toutes vos questions sans réponses se trouvent ici en détail.</a></p>
             </li>
      		<li>
-              <h2><a href="condition_generales.php">Conditions générales d'utilisation</a></h2>
+              <h2><a href="conditions_generales.php">Conditions générales d'utilisation</a></h2>
             </li>
 			<li>
               <a href="#"><h2>Mentions légales</h2> </a>

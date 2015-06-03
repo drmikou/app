@@ -119,9 +119,8 @@
         
             <p><center><a href="#bloc_page"> Revenir en haut de la page </p></center></a>
         </div>
-    </body>  
-        <!-- Footer-->
-            <?php include("includes/footer.php"); ?>
-
      
+        <!-- Footer-->
+        <?php include("includes/footer.php"); ?>
+    </body> 
 </html>
