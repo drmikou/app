@@ -1,6 +1,7 @@
 <?php
     session_start();
     include("includes/start.php");
+	include("includes/php_chat.php");
 ?>
     <body>
 		<!-- Corps de l'accueil-->
