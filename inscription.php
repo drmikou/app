@@ -45,7 +45,7 @@
 									<label for="sup">Complément d'adresse : </label><input type="text" name="sup" id="sup" /> <br/>
 									<label for="town">* Ville : </label><input type="text" name="town" id="town" />
                                                                         <label for="Département">* Département : </label>
-                                                                            <select name="Région">
+                                                                            <select name="dep">
                                                                                 <?php
                                                                                 $reponse = $db->query('SELECT * FROM departement'); // requête sql "selectionne tout dans la table region"
                                                                                         // On affiche chaque entrée une à une
@@ -135,13 +135,17 @@
 							if(isset($_POST['phone'])){
 								$phone = $_POST['phone'];
 							}
+							
+							$dep = $_POST['dep'];
+							
+							
 						
                                                     
                                                     
 						
 
 					   //Vérification du pseudo
-    $query=$db->prepare('SELECT COUNT(*) AS nbr FROM user WHERE user_login =:pseudo');
+    $query=$db->prepare('SELECT COUNT(*) AS nbr FROM user WHERE user_login = :pseudo');
     $query->bindValue(':pseudo',$pseudo, PDO::PARAM_STR);
     $query->execute();
     $pseudo_free=($query->fetchColumn()==0)?1:0;
@@ -228,15 +232,16 @@
 
     echo'<h1>Inscription terminée</h1>';
 
-        echo'<p>Bienvenue '.stripslashes(htmlspecialchars($_POST['pseudo'])).' vous êtes maintenant inscrit sur le forum</p>
+        echo'<p>Bienvenue '.stripslashes(htmlspecialchars($_POST['pseudo'])).' vous êtes maintenant inscrit sur le site VegATable !</p>
 
-    <p>Cliquez <a href="./connexion.php">ici</a> pour vous connecter</p>';
+    <p>Cliquez <a href="./home.php">ici</a> pour retourner sur la page d\accueil.</p>';
 
  
     
     
- $query=$db-> prepare ('INSERT INTO user(user_login,user_password,user_name,user_surname,user_mail,user_birth, user_sup, user_town, user_street,user_region,user_photo,user_phone) VALUES (:pseudo,:password, :email,:name,:surname,:birth,:sup,:town,:street,:phone)');
-    $query->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
+	$query=$db-> prepare ('INSERT INTO user(user_login,user_password,user_name,user_surname,user_mail,user_birth, user_sup, user_town, user_street,user_phone, user_region) VALUES (:pseudo,:password, :name, :surname, :email,:birth,:sup,:town,:street,:phone, :dep)');
+    
+	$query->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
 
     $query->bindValue(':password', $password, PDO::PARAM_INT);
 
@@ -248,7 +253,6 @@
 
     $query->bindValue(':sup', $sup, PDO::PARAM_STR);
 
-
     $query->bindValue(':name', $name, PDO::PARAM_STR);
 
     $query->bindValue(':surname', $surname, PDO::PARAM_STR);
@@ -256,6 +260,8 @@
     $query->bindValue(':birth', $birth, PDO::PARAM_STR);
     
     $query->bindValue(':phone', $phone, PDO::PARAM_STR);
+	
+	$query->bindValue(':dep', $dep, PDO::PARAM_STR);
     
      $query->execute();
       
