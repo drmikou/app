@@ -12,7 +12,7 @@
 
                 <div class="box">                          
                     <ul class="titre_list"> Membres </ul>
-                        <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('membre_voir');">Voir les membres</span> </li>
+                        <li><a href='membre_voir.php'> Voir les membres </a> </li>
                         <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('membre_supprimer');">Supprimer un utilisateur</span> </li>
                 </div>
             </section>

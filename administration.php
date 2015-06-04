@@ -13,8 +13,6 @@
         <?php include("includes/aside_administration.php"); ?>
 
 
-
-        
         <!-- ACTUALITE -->
     	   <!-- Ajouter une actualite -->
             <div id="actualite_ajouter">

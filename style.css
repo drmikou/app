@@ -330,7 +330,7 @@
         display: inline;
     }
 
-    .bloc_membre_voir #bloc_name, .bloc_membre_voir #bloc_surname, .bloc_membre_voir #bloc_mail
+    .bloc_membre_voir #bloc_name, .bloc_membre_voir #bloc_surname, .bloc_membre_voir #bloc_mail, .bloc_membre_voir #bloc_birth, .bloc_membre_voir #bloc_region
     {
         color: red;
         border-bottom: 0.1em solid #808080;
@@ -341,21 +341,77 @@
         margin-left: 5em;
     }
 
+    .bloc_membre_voir #bloc_phone
+    {
+        color: red;
+        border-bottom: 0.1em solid #808080;
+        width: 10%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+        margin-left: 4em;
+    }
+
+    .bloc_membre_voir #bloc_rate
+    {
+        color: red;
+        border-bottom: 0.1em solid #808080;
+        width: 10%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+        margin-left: 4em;
+    }
+
+    .bloc_membre_voir #bloc_region
+    {
+        color: red;
+        border-bottom: 0.1em solid #808080;
+        width: 10%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+        margin-left: 3em;
+    }
+
+    .bloc_membre_voir #bloc_birth
+    {
+        color: red;
+        border-bottom: 0.1em solid #808080;
+        width: 10%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+        margin-left: 7em;
+    }
+
     .bloc_membre_voir .affichage_login
     {
         text-align: center;
         padding-bottom: 0.5em;
         display: inline-block;
         margin-top: 1em;
+        width: 3em;
     }
-
-    .bloc_membre_voir .affichage_name, .bloc_membre_voir .affichage_surname, .bloc_membre_voir .affichage_mail
+ 
+    .bloc_membre_voir .affichage_name, .bloc_membre_voir .affichage_surname,  .bloc_membre_voir .affichage_birth,  .bloc_membre_voir .affichage_region, .bloc_membre_voir .affichage_phone, .bloc_membre_voir .affichage_rate
     {
         text-align: center;
         padding-bottom: 0.5em;
         display: inline-block;
         margin-top: 1em;
         margin-left: 5em;
+        width: 3em;
+    }
+
+    .bloc_membre_voir .affichage_mail
+    {
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline-block;
+        margin-top: 1em;
+        margin-left: 5em;
+        width: 5em;
     }
 
     /* ----------- Coté page profil ----------- */
@@ -404,7 +460,7 @@
             color: #008000;
         }
 
-        #ajouter, #actualite_ajouter, #actualite_supprimer, #membre_voir
+        #ajouter, #actualite_ajouter, #actualite_supprimer, #membre_voir, #membre_supprimer
         {
             display: inline-block;
             margin-left: auto;
@@ -414,7 +470,7 @@
             z-index:1;
         }
 
-        #ajouter fieldset, #actualite_ajouter fieldset, #actualite_supprimer fieldset, #membre_voir fieldset
+        #ajouter fieldset, #actualite_ajouter fieldset, #actualite_supprimer fieldset, #membre_voir fieldset, #membre_supprimer fieldset
         {
             width: 50%;
             margin-top: 1em;

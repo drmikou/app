@@ -4,7 +4,7 @@
         <legend>Voir les membres</legend>
             <p>
                 <label for="membre_check">Voir tous les membres</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
-                <input type="checkbox" name="membre_check" id="membre_check" value="" checked/>
+                <input type="checkbox" name="membre_check" id="membre_check" value="" />
             </p>
 
             <p>
@@ -15,5 +15,8 @@
             <p>
                 <input type="submit" name="submit" value="Afficher le(s) membre(s)" />
             </p>
-    
+
+            <p>
+                <a href="" onClick="javascript:window.history.go(-1)">Retour à la page précédente</a> 
+            </p>
     
