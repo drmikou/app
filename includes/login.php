@@ -18,26 +18,27 @@
 	//echo '<h1>Connexion</h1>';
 	//if ($id!=0) erreur(ERR_IS_CO);
 ?>
+<div id="form_co">
+	<form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
+		<fieldset>	<!-- Used to group related elements in a form. Draws a box around the related elements. -->
+			<legend>Identifiant</legend> <!-- defines a caption for the <fieldset> element. -->
+				<!-- Champ Login -->
+				<p>
+					<label for="login">Login :</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
+					<input type="text" name="login" id="login" value="<?php if(!empty($_POST['login'])){echo htmlspecialchars($_POST['login'], ENT_QUOTES); } ?>"/>
+				</p>
 
-<form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
-	<fieldset>	<!-- Used to group related elements in a form. Draws a box around the related elements. -->
-		<legend>Identifiant</legend> <!-- defines a caption for the <fieldset> element. -->
-			<!-- Champ Login -->
-			<p>
-				<label for="login">Login :</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
-				<input type="text" name="login" id="login" value="<?php if(!empty($_POST['login'])){echo htmlspecialchars($_POST['login'], ENT_QUOTES); } ?>"/>
-			</p>
-
-			<!-- Champ Password -->
-			<p>
-				<label for="password">Mot de passe :</label> 
-            	<input type="password" name="password" id="password" value="" />
-			</p>
-			<p>
-            	<input type="submit" name="submit" value="Identification" />
-            </p>
-    </fieldset>
-</form>
+				<!-- Champ Password -->
+				<p>
+					<label for="password">Mot de passe :</label> 
+	            	<input type="password" name="password" id="password" value="" />
+				</p>
+				<p>
+	            	<input type="submit" name="submit" value="Identification" />
+	            </p>
+	    </fieldset>
+	</form>
+</div>
 
 <!-- VERIFICATION -->
 	<?php
@@ -64,7 +65,7 @@
 					$_SESSION['pseudo'] = $data['user_login'];
 	    			$_SESSION['id'] = $data['user_id'];
 	    			$_SESSION['admin'] = $data['user_admin'];
-	    			header('Location: home.php'); 
+	    			/*header('Location: home.php');*/
 
 	    			if( $data['user_admin'] == 1)
 	    			{

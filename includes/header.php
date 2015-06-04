@@ -54,11 +54,6 @@
         	                    </dd>
         	            </dl>                                                            
                                                              
-                        <!-- Panier -->
-                        <dl>
-        	                <dt><a href="panier.php">Panier</a></dt>
-        	            </dl>
-
                          <!-- Connexion -->
                         <dl>
                             <dt><a href="connexion.php">Connexion</a></dt>

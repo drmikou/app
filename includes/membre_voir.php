@@ -4,44 +4,46 @@
 	?>
 
 <!-- Formulaire -->
-	<?php include("includes/membre_voir_form.php"); ?>
-
+	<div id= membre_voir>
+		<?php include("includes/membre_voir_form.php"); ?>
+	</div>
 
 <!-- Affichage tableau -->
 
 	<div class= "bloc_membre_voir">
-		<div id= "bloc_login">
-			Login:
-		</div>
+		<div class= "bloc_titre">
+			<div id= "bloc_login">
+				Login:
+			</div>
 
-		<div id= "bloc_name">
-			Nom:
-		</div>
+			<div id= "bloc_name">
+				Nom:
+			</div>
 
-		<div id= "bloc_surname">
-			Prénom:
-		</div>
+			<div id= "bloc_surname">
+				Prénom:
+			</div>
 
-		<div id= "bloc_mail">
-			Mail: 
-		</div>
+			<div id= "bloc_mail">
+				Mail: 
+			</div>
 
-		<div id= "bloc_birth">
-			Naissance: 
-		</div>
+			<div id= "bloc_birth">
+				Naissance: 
+			</div>
 
-		<div id= "bloc_region">
-			Region: 
-		</div>
+			<div id= "bloc_region">
+				Region: 
+			</div>
 
-		<div id= "bloc_phone">
-			Téléphone:
-		</div>
+			<div id= "bloc_phone">
+				Téléphone:
+			</div>
 
-		<div id= "bloc_rate">
-			Note: <br>
+			<div id= "bloc_rate">
+				Note: <br>
+			</div>
 		</div>
-
 
 	<!-- Traitement -->
 	<?php
@@ -53,6 +55,7 @@
 			while($data= $reponse->fetch())
 			{
 	?>
+			<div class= "ligne_voir">
 				<div class= "affichage_login">
 					<?php echo $data['user_login'] ?>
 				</div>
@@ -84,7 +87,7 @@
 				<div class= "affichage_rate">
 					<?php echo $data['user_rate'] ?> 
 				</div>
-
+			</div>
 				<br>
 
 	<?php			
@@ -142,9 +145,6 @@
 		}
 	?>
 
-
-
-
-</div>
+	</div>
 	</fieldset>
 </form>

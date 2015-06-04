@@ -3,115 +3,80 @@
 		include("includes/database_connection.php");
 	?>
 
-<!-- Affichage tableau -->
+	<!-- Affichage tableau -->
+	<div class= "news_tete">
 
-	<div class= "bloc_news">
-		<div id= "bloc_titre">
+		<div class= "bloc_news">
 			Titre:
 		</div>
 
-		<div id= "bloc_contenu">
-			
+		<div class= "bloc_date">
+			Date:
 		</div>
 
+		<div class= "bloc_contenu">
+			Contenu:
+		</div>
 
-
-
+	</div>
 	<!-- Traitement -->
 	<?php
-		if (isset($_POST['membre_check']))
+		if (isset($_POST['news_check']))
 		{
-			$reponse= $db->query('SELECT * FROM user');
-
+			$reponse= $db->query('SELECT * FROM news');
 
 			while($data= $reponse->fetch())
 			{
 	?>
-				<div class= "affichage_login">
-					<?php echo $data['user_login'] ?>
+				<br>
+				<div class= "news_affichage">
+					<div class= "affichage_title">
+						<?php echo $data['news_title'] ?>
+					</div>
+
+					<div class= "affichage_date">
+						<?php echo $data['news_date'] ?>
+					</div>
+
+					<div class= "affichage_content">
+						<?php echo $data['news_content'] ?>
+					</div> 
 				</div>
-
-				<div class= "affichage_name">
-					<?php echo $data['user_name'] ?>
-				</div> 
-
-				<div class= "affichage_surname">
-					<?php echo $data['user_surname'] ?> 
-				</div>
-
-				<div class= "affichage_mail">
-					<?php echo $data['user_mail'] ?> 
-				</div>
-
-				<div class= "affichage_birth">
-					<?php echo $data['user_birth'] ?> 
-				</div>
-
-				<div class= "affichage_region">
-					<?php echo $data['user_region'] ?> 
-				</div>
-
-				<div class= "affichage_phone">
-					<?php echo $data['user_phone'] ?> 
-				</div>
-
-				<div class= "affichage_rate">
-					<?php echo $data['user_rate'] ?> 
-				</div>
-
 				<br>
 
 	<?php			
 			}
 		}
-		elseif (isset($_POST['membre_search']))
+		elseif (isset($_POST['news_search']))
 		{
-			$membre = $_POST['membre_search'];
+			$news = $_POST['news_search'];
 
-			$query= $db->prepare('SELECT * FROM user WHERE user_login= :login');		//PDO::prepare — Prépare une requête à l'exécution et retourne un objet
-			$query->bindValue('login',$membre, PDO::PARAM_STR);				//PDOStatement::bindValue — Associe une valeur à un paramètre
+			$query= $db->prepare('SELECT * FROM news WHERE news_title= :news');		//PDO::prepare — Prépare une requête à l'exécution et retourne un objet
+			$query->bindValue('news',$news, PDO::PARAM_STR);				//PDOStatement::bindValue — Associe une valeur à un paramètre
 			$query->execute(); // Exécute la préparation
 			$data = $query->fetch();
 
 		?>
 
-				<div class= "affichage_login">
-					<?php echo $data['user_login'] ?>
+				<br>
+				<div class= "news_affichage">
+					<div class= "affichage_title">
+						<?php echo $data['news_title'] ?>
+					</div>
+
+					<div class= "affichage_date">
+						<?php echo $data['news_date'] ?>
+					</div>
+
+					<div class= "affichage_content">
+						<?php echo $data['news_content'] ?>
+					</div> 
 				</div>
-
-				<div class= "affichage_name">
-					<?php echo $data['user_name'] ?>
-				</div> 
-
-				<div class= "affichage_surname">
-					<?php echo $data['user_surname'] ?> 
-				</div>
-
-				<div class= "affichage_mail">
-					<?php echo $data['user_mail'] ?> 
-				</div>
-
-				<div class= "affichage_birth">
-					<?php echo $data['user_birth'] ?> 
-				</div>
-
-				<div class= "affichage_region">
-					<?php echo $data['user_region'] ?> 
-				</div>
-
-				<div class= "affichage_phone">
-					<?php echo $data['user_phone'] ?> 
-				</div>
-
-				<div class= "affichage_rate">
-					<?php echo $data['user_rate'] ?> 
-				</div>
-
 				<br>
 	<?php	
 				if($data == null)
 				{
-					echo "Ce pseudo n'existe pas";
+					echo "Cet article n'existe pas";
 				}		
 		}
 	?>
@@ -120,5 +85,3 @@
 
 
 </div>
-	</fieldset>
-</form>

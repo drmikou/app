@@ -327,7 +327,6 @@
     .bloc_membre_voir #bloc_login
     {
         color: red;
-        border-bottom: 0.1em solid #808080;
         width: 10%;
         text-align: center;
         padding-bottom: 0.5em;
@@ -337,7 +336,6 @@
     .bloc_membre_voir #bloc_name, .bloc_membre_voir #bloc_surname, .bloc_membre_voir #bloc_mail, .bloc_membre_voir #bloc_birth, .bloc_membre_voir #bloc_region
     {
         color: red;
-        border-bottom: 0.1em solid #808080;
         width: 10%;
         text-align: center;
         padding-bottom: 0.5em;
@@ -348,7 +346,6 @@
     .bloc_membre_voir #bloc_phone
     {
         color: red;
-        border-bottom: 0.1em solid #808080;
         width: 10%;
         text-align: center;
         padding-bottom: 0.5em;
@@ -359,7 +356,6 @@
     .bloc_membre_voir #bloc_rate
     {
         color: red;
-        border-bottom: 0.1em solid #808080;
         width: 10%;
         text-align: center;
         padding-bottom: 0.5em;
@@ -370,7 +366,6 @@
     .bloc_membre_voir #bloc_region
     {
         color: red;
-        border-bottom: 0.1em solid #808080;
         width: 10%;
         text-align: center;
         padding-bottom: 0.5em;
@@ -381,7 +376,6 @@
     .bloc_membre_voir #bloc_birth
     {
         color: red;
-        border-bottom: 0.1em solid #808080;
         width: 10%;
         text-align: center;
         padding-bottom: 0.5em;
@@ -418,6 +412,39 @@
         width: 5em;
     }
 
+    #membre_voir fieldset
+    {
+         width:78%;
+        margin-top: 1em;
+        margin-left: 10%;
+    }
+
+    .bloc_membre_voir
+    {
+        margin-left: 10%;
+        margin-top: 1%
+    }
+
+    .ligne_voir
+    {
+        width: 89%; 
+        border-bottom: 0.1em solid #808080; 
+    }
+
+    .bloc_titre
+    {
+        border-bottom: 0.1em solid #808080;
+        border-top: 0.1em solid #808080; 
+        padding-bottom: 1%;
+        padding-top: 1%;
+        width: 89%;
+        margin-top: 2%;
+    }
+
+    .affichage_title
+    {
+        width: 3em;
+    }
     /* ----------- Coté page profil ----------- */
 
         .cote
@@ -464,7 +491,7 @@
             color: #008000;
         }
 
-        #ajouter, #actualite_ajouter, #actualite_supprimer, #membre_voir, #membre_supprimer
+        #ajouter, #actualite_ajouter, #actualite_supprimer, #membre_supprimer
         {
             display: inline-block;
             margin-left: auto;
@@ -474,7 +501,7 @@
             z-index:1;
         }
 
-        #ajouter fieldset, #actualite_ajouter fieldset, #actualite_supprimer fieldset, #membre_voir fieldset, #membre_supprimer fieldset
+        #ajouter fieldset, #actualite_ajouter fieldset, #actualite_supprimer fieldset, #membre_supprimer fieldset
         {
             width: 50%;
             margin-top: 1em;
@@ -494,6 +521,86 @@
         {
             width:50%;
             margin-top: 1em;
+        }
+
+    /* -----------  Connexion ----------- */
+        #form_co
+        {
+            width: 40%;
+            margin-left: 26%;
+            margin-top: 1%;
+        }
+
+        #inscription
+        {
+            margin-left: 40%;
+            margin-top: 1%;
+            font-size: 2em;
+            color: black;
+        }
+
+
+    /* ----------- Voir les actualités ----------- */
+        #news_voir fieldset
+        {
+            width: 78%;
+            margin-left: 10%;
+            margin-top: 1%;
+        }   
+
+        .news_tete
+        {
+            border-bottom: 0.1em solid #808080;
+            border-top: 0.1em solid #808080;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            width: 79%;
+            margin-left: 10%;
+            color: red;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        #news_voir .bloc_news
+        {
+            display: inline-block;
+        }
+
+        #news_voir .bloc_date
+        {
+            display: inline-block;
+            margin-left: 10%;
+        }
+
+        #news_voir .bloc_contenu
+        {
+            display: inline-block;
+            margin-left: 14%;
+        }
+
+        #news_voir .affichage_title
+        {
+            display: inline-block;
+        }
+
+        #news_voir .affichage_content
+        {
+            display: inline-block;
+            margin-left: 3%;
+        }
+
+        #news_voir .affichage_date
+        {
+            display: inline-block;
+            margin-left: 9%;
+        }
+
+        .news_affichage
+        {
+            border-bottom: 0.1em solid #808080;
+            margin-left: 10%;
+            width: 79%;
+            padding-bottom: 1%;
         }
 
 	/*------------ CHAT -------------------------*/

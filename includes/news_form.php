@@ -15,4 +15,6 @@
             <p>
                 <input type="submit" name="submit" value="Afficher l'actualité" />
             </p>
-
+    </fieldset>
+    
+</form>

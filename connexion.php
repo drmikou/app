@@ -8,8 +8,9 @@
         <!-- Corps de la connexion-->
             <?php include("includes/login.php"); ?>
         
-
-            <a href="inscription.php">S'inscrire</a>
+        <div id= "inscription">
+            <a href="inscription.php" style="text-decoration:none" >S'inscrire</a>
+        </div>
         </div>
         <!-- Footer-->
         <?php include("includes/footer.php"); ?>

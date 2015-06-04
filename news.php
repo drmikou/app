@@ -5,15 +5,17 @@
 ?>
 
     <body>
+    	<div id="news_voir">
 
-    	<!-- Formulaire -->
-		<?php include("includes/news_form.php"); ?>
-
-		<!-- Traitement -->
-   		<?php include("includes/news.php"); ?>
+    		<!-- Formulaire -->
+			<?php include("includes/news_form.php"); ?>
+		
+			<!-- Traitement -->
+   			<?php include("includes/news.php"); ?>
+   			
+   		</div>
    
-   
-   </body>
+	</body>
         <?php include("includes/footer.php"); ?>
  
 

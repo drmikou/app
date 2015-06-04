@@ -34,7 +34,7 @@
             	<input type="password" name="password" id="password" value="" />
 			</p>
 			<p>
-            	<input type="submit" name="submit" value="Identification" />
+            	<input type="submit" style="text-decoration:none" name="submit" value="Identification" />
             </p>
     </fieldset>
 </form>
