@@ -31,7 +31,7 @@
                         
                         <!-- Fruits et légumes -->
                         <dl>
-        	                <dt><a href="#">Fruits et Légumes</a></dt>
+        	                <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
         	            </dl>
                           
                         <!-- Page d'achats -->
@@ -89,7 +89,7 @@
                                         
                         <!-- Fruits et légumes -->
                         <dl>
-                            <dt><a href="#">Fruits et Légumes</a></dt>
+                            <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
                         </dl>
                                           
                         <!-- Profil -->
@@ -148,7 +148,7 @@
                                         
                         <!-- Fruits et légumes -->
                         <dl>
-                            <dt><a href="#">Fruits et Légumes</a></dt>
+                            <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
                         </dl>
                                           
                         <!-- Profil -->
