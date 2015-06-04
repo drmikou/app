@@ -38,7 +38,12 @@
         	            <dl>
         	                <dt><a href="echange.php"> Echanges </a></dt>  
         	            </dl>
-                          
+                         
+                        <!--  Actualités -->
+                        <dl>
+                            <dt><a href='news.php'> Actualités </a></dt>
+                        </dl>
+
                         <!-- Page de recettes -->         
         	            <dl>
         	                <dt><a href="recette.php">Recettes</a></dt>
@@ -85,6 +90,11 @@
                                         <li>Top recettes</li>
                                     </ul>
                                 </dd>
+                        </dl>
+
+                        <!--  Actualités -->
+                        <dl>
+                            <dt><a href='news.php'> Actualités </a></dt>
                         </dl>
                                         
                         <!-- Fruits et légumes -->
@@ -135,7 +145,12 @@
                         <dl>
                             <dt><a href="echange.php"> Echanges </a></dt>  
                         </dl>
-                                        
+
+                        <!--  Actualités -->
+                        <dl>
+                            <dt><a href='news.php'> Actualités </a></dt>
+                        </dl>              
+
                         <!-- Page de recettes -->         
                         <dl>
                             <dt><a href="recette.php">Recettes</a></dt>
@@ -149,18 +164,7 @@
                         <!-- Fruits et légumes -->
                         <dl>
                             <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
-                        </dl>
-                                          
-                        <!-- Profil -->
-                        <dl>
-                            <dt><a href="mon_profil.php"><?php echo $pseudo ?></a></dt>
-                                <dd>
-                                    <ul>
-                                        <li><a href="messages.php">Mes messages</a></li>
-                                        <li><a href="parametre.php">Paramètres</a></li> 
-                                    </ul>
-                                </dd>
-                        </dl>
+                        </dl>                 
                                         
                         <!-- Forum -->
                         <dl>

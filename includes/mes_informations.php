@@ -23,7 +23,7 @@
         </div>
 
         <div class="bloc">
-            <b> Adresse : </b> <br>     <div class="donnee"> <?php echo $data['user_adress'] ?> </div> <br>
+            <b> Adresse : </b> <br>     <div class="donnee"> <?php echo $data['user_street'] ?> <?php echo $data['user_town'] ?> <?php echo $data['user_postalcode'] ?> </div> <br>
         </div>
 
         <div class="bloc">

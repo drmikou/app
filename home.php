@@ -12,47 +12,27 @@
 				</div>
 
 				<div class="information"> 
+					<?php
+						$reponse= $db->query('SELECT news_title, news_content FROM news ORDER BY news_id DESC LIMIT 0, 4');		//PDO::prepare — Prépare une requête à l'exécution et retourne un objet
+						while($data = $reponse->fetch())
+						{
+					?>
 
-						<section>
-							<div class="boite">
-								<h2 class="titre">Top recette</h2>
-								<div class="contenu">
-									<p>Venez découvrir les meilleures recettes de votre site!</p>
+							<section>
+								<div class="boite">
+									<h2 class="titre"> <?php echo $data['news_title']?> </h2>
+									<div class="contenu">
+										<p> <?php echo $data['news_content']?> </p>
+									</div>
+									<p class="bouton"><a href="#">Plus de détails</a></p>
 								</div>
-								<p class="bouton"><a href="#">Plus de détails</a></p>
-							</div>
-						</section>
-
-						<section>
-							<div class="boite">
-								<h2 class="titre">La FAQ</h2>
-								<div class="contenu">
-									<p>Cette foire aux questions répondra à toute vos interrogations!</p>
-								</div>
-								<p class="bouton"><a href="#">Plus de détails</a></p>
-							</div>
-						</section>
-						
-						<section>
-							<div class="boite">
-								<h2 class="titre">Nouvelle page de profil!</h2>
-								<div class="contenu">
-									<p>La nouvelle page de profil de Veg A Table fait son apparition! Vous pouvez désormais modifier à votre guise votre profil.</p>
-								</div>
-								<p class="bouton"><a href="#">Plus de détails</a></p>
-							</div>
-						</section>
-
-						<section>
-							<div class="boite">
-								<h2 class="titre">Forum</h2>
-								<div class="contenu">
-									<p>Rejoignez notre communauté Veg A Table dès maintenant! Le forum est ouvert à tous, il vous permettra d'échanger toutes les informations dont vous avez besoin! </p>
-								</div>
-								<p class="bouton"><a href="#">Plus de détails</a></p>
-							</div>
-						</section>
+							</section>
+							
+					<?php				
+						}
+					?>
 				</div>
+				
 			<?php include("includes/chat.php"); ?>
 		</div>
 	</body>
