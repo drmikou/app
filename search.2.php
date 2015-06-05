@@ -44,7 +44,7 @@
 				foreach ($s as $mot) {
 
 					echo'<article> <h1>'.$c2.':</h1> <h1> <img src="images/'.$c2.'.jpg" alt="Image flottante2" class="imageflottante"width="100" heigh="100" /> </h1>'; 
-					echo'<h2> Que designe le mot "'.$c2.'" ?</h2> <p>'.$donnees["fruit_legumes_description"].'</p> </article>';
+					echo'<h2> Qu\'est ce qu\'un(e) "'.$c2.'" ?</h2> <p>'.$donnees["fruit_legumes_description"].'</p> </article>';
 				}
 		}
 	$reponse->closeCursor(); // Termine le traitement de la requête
