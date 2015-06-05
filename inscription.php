@@ -252,7 +252,7 @@
                             else
                             {
                                 echo '<h1>Inscription interrompue</h1>';
-                                echo '<p>Une ou plusieurs erreurs se sont produites pendant l incription</p>';
+                                echo '<p>Une ou plusieurs erreurs se sont produites pendant l inscription</p>';
                                 echo '<p>'.$i.' erreur(s)</p>';
                                 echo '<p>'.$pseudo_erreur1.'</p>';
                                 echo '<p>'.$pseudo_erreur2.'</p>';
