@@ -43,13 +43,13 @@
 				$c2=$donnees["fruit_legumes_nom"];
 				foreach ($s as $mot) {
 
-					echo'<article> <h1>'.$c2.':</h1> <h1> <img src="images/'.$c2.'.jpg" alt="Image flottante2" class="imageflottante"width="100" heigh="100" /> </h1>'; 
-					echo'<h2> Que designe le mot "'.$c2.'" ?</h2> <p>'.$donnees["fruit_legumes_description"].'</p> </article>';
+					echo'<article> <h1>'.$c2.':</h1> <h1> <img src="images/fruits_legumes/'.$c2.'.jpg" alt="Image flottante2" class="imageflottante"width="100" heigh="100" /> </h1>'; 
+					echo'<h2> Qu\'est ce qu\'un(e) "'.$c2.'" ?</h2> <p>'.$donnees["fruit_legumes_description"].'</p> </article>';
 				}
 		}
 	$reponse->closeCursor(); // Termine le traitement de la requête
 	}
 	else{
-		echo'<article> <p>Votre recherche n\'a pas aboutie.</p> <p> Veuillez remplir le champ de la barre de recherche</p></article>';
+		echo'<article> <p>Votre recherche n\'a pas abouti.</p> <p> Veuillez remplir le champ de la barre de recherche</p></article>';
 	}
 ?>
