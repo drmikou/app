@@ -85,4 +85,57 @@
 		}
 		$reponse->closeCursor(); // Termine le traitement de la requête
 	}
+	//  AFFICHAGE PAR DEFAUT ORDONNER PAR DATE La PLUS RECENTE
+	else
+	{
+		$reponse = $db->query('SELECT * FROM echanges');		// Initialisation de la variable réponse								// On divise ce echanges_prod2 en mots
+		$request = "SELECT * FROM echanges order by echange_date DESC ";					// On récupère tout le echanges_prod2 de la table echange:
+
+
+		$reponse = $db->query($request);
+		$presence_reponse = 0;
+		while ($donnees = $reponse->fetch()){
+			?>
+			<article3>
+
+                        <h2>Echange proposé par <?php echo $donnees['echange_pseudo'];?></h2>
+                        <p>numéro de l'offre: <?php echo $donnees['echange_id'];?></p>
+                        <p>date de parution de l'offre: <?php echo $donnees['echange_date'];?></p>
+                    
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <table border="1" >
+                                        <tr>
+                                            <td> <?php echo '<img src="images/fruits_legumes/'.$donnees['echange_prod1'].'.jpg" alt="Image flottante2" title="'.$donnees['echange_prod1'].'" class="imageflottante"width="100" heigh="100" />';?> </td>
+                                         
+                                        </tr>
+                                        <tr>
+                                            <td>  <?php echo $donnees['echange_qte_prod1'];?> kg</td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td> Contre </td>
+
+                                <td>
+                                    <table border="1" >
+                                        <tr>
+                                           <td> <?php echo'<img src="images/fruits_legumes/'.$donnees['echange_prod2'].'.jpg" alt="Image flottante2" title="'.$donnees['echange_prod2'].'" class="imageflottante"width="100" heigh="100" />';?></td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td> <?php echo $donnees['echange_qte_prod2'];?> kg </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </article3>
+											
+			<?php
+		}
+		$reponse->closeCursor(); // Termine le traitement de la requête
+	}
 ?>
