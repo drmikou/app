@@ -42,9 +42,9 @@
 <?php 
 				$c2=$donnees["fruit_legumes_nom"];
 				foreach ($s as $mot) {
-
+					
 					echo'<article> <h1>'.$c2.':</h1> <h1> <img src="images/fruits_legumes/'.$c2.'.jpg" alt="Image flottante2" class="imageflottante"width="100" heigh="100" /> </h1>'; 
-					echo'<h2> Qu\'est ce qu\'un(e) "'.$c2.'" ?</h2> <p>'.$donnees["fruit_legumes_description"].'</p> </article>';
+					echo'<h2> Qu\'est ce qu\'un(e) "'.$c2.'" ?</h2> <p>'.$donnees["fruit_legumes_description"].'</p> </br> <a href="echange.php?barre_recherche='.$donnees["fruit_legumes_nom"].'">voir les echanges en rapport avec '.$donnees["fruit_legumes_nom"].'</a> </article>';
 				}
 		}
 	$reponse->closeCursor(); // Termine le traitement de la requête
