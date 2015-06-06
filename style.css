@@ -540,12 +540,92 @@
         }
 
 
+    /* ----------- Mes messages ----------- */
+        
+        #message_envoyer
+        {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            left: 10%;
+            z-index:1;
+            margin-top: 1%;
+        }
+
+        #message_envoyer fieldset
+        {
+        }
+
+        #message_voir
+        {
+            display: inline-block;
+            width: 40%;
+            margin-left: 10%;
+        }
+
+        #message_voir .titre
+        {
+            display: inline-block;
+            border-bottom: 0.1em solid #808080;
+            width: 59%;
+            padding-bottom: 2%;
+        }
+
+        #message_voir .de
+        {
+            display: inline-block;
+
+        }
+
+        #message_voir .date
+        {
+            display: inline-block;
+            margin-left: 8em;
+        }
+
+        #message_voir .contenu
+        {
+            display: inline-block;
+            margin-left: 10em;
+        }
+
+        #message_voir .data
+        {
+            display: block;
+            margin-left: 31%;
+            margin-top: 1%;
+        }
+
+        #message_voir .de2
+        {
+            display: inline-block;
+            width: 2.5%;
+        }
+
+        #message_voir .date2
+        {
+            display: inline-block;
+            margin-left: 8em;
+
+        }
+
+        #message_voir .contenu2
+        {
+            display: inline-block;
+            margin-left: 6em;
+        }
+
+
+
+
     /* ----------- Voir les actualités ----------- */
-        #news_voir fieldset
+        #news_voir
         {
             width: 78%;
             margin-left: 10%;
             margin-top: 1%;
+
         }   
 
         .news_tete
@@ -554,8 +634,6 @@
             border-top: 0.1em solid #808080;
             padding-top: 1%;
             padding-bottom: 1%;
-            width: 79%;
-            margin-left: 10%;
             color: red;
             margin-top: 1%;
             margin-bottom: 1%;
@@ -598,8 +676,6 @@
         .news_affichage
         {
             border-bottom: 0.1em solid #808080;
-            margin-left: 10%;
-            width: 79%;
             padding-bottom: 1%;
         }
 

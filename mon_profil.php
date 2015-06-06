@@ -34,7 +34,25 @@
         <script type="text/javascript">
             afficher_cacher('mes_informations');
         </script>
+
+    <!-- Boite de réception --> 
+        <div id="message_voir">
+            <?php include("includes/message_voir.php"); ?>
+        </div>   
+
+        <script type="text/javascript">
+            afficher_cacher('message_voir');
+        </script>
 	
+
+    <!-- Envoyer un messsage --> 
+        <div id="message_envoyer">
+            <?php include("includes/message_envoyer.php"); ?>
+        </div>   
+
+        <script type="text/javascript">
+            afficher_cacher('message_envoyer');
+        </script>
 
 </body>
 
