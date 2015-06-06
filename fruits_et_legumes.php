@@ -16,7 +16,7 @@
 
                         <?php 
 
-                            $request='SELECT fruit_legumes_nom FROM fruit_legumes ORDER BY fruit_legumes_nom';
+                            $request='SELECT fruit_legumes_nom FROM fruit_legumes ORDER BY RAND()';
                         
                             $reponse = $db->query($request);
 
