@@ -271,7 +271,7 @@
 		
 		
 		
-require 'phpmailer/PHPMailerAutoload.php';
+require 'includes/phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 
 
