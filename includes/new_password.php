@@ -56,7 +56,7 @@ $mail->addAddress($email);
 $mail->isHTML(true);                                  
 
 $mail->Subject = 'Changement de votre mot de passe';
-$mail->Body    = 'Bonjour nous vous envoyons un mail faisant suite a votre demande de changement de mot de passe. Votre nouveau mot de passe est : '.stripslashes(htmlspecialchars ($mdp)).'. Vous pourrez le changer a tout moment une fois connecte sur notre site. Bonne continuation ! De la part de toute l\equipe VegATable!';
+$mail->Body    = 'Bonjour nous vous envoyons un message faisant suite a votre demande de changement de mot de passe. Votre nouveau mot de passe est : '.stripslashes(htmlspecialchars ($mdp)).'. Vous pourrez le changer a tout moment une fois connecte sur notre site. Bonne continuation ! De la part de toute l\equipe VegATable!';
 				  
 
 $mail->AltBody = 'Le mail est envoyé';
@@ -65,7 +65,7 @@ if(!$mail->send()) {
     echo 'Le message n\'a pas été envoyé, vérifiez votre adresse email.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'Un mail pour recuperer votre mot de passe a ete envoye a votre adresse mail.';
+    echo 'Un message pour recuperer votre mot de passe a ete envoye a votre adresse mail.';
 }
 
 			}
