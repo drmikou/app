@@ -134,7 +134,13 @@
         #image_message
         {
             display: inline-block;
-            margin-left: 5em;
+            margin-left: 2em;
+        }
+
+        #image_logout
+        {
+            display: inline-block;
+            margin-left: 2em;
         }
 
     /* ------------- Menu déroulant -------------*/
@@ -144,6 +150,11 @@
             display: inline-block;
             position: relative; 
             z-index:4;
+        }
+
+        #image_home
+        {
+            padding-top: 1%;
         }
 
         #menu

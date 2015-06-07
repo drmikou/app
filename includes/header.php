@@ -18,36 +18,46 @@
 
                     <?php
 
-
-                        $query= $db->prepare('SELECT message_read FROM message WHERE message_destination= :login');       //PDO::prepare — Prépare une requête à l'exécution et retourne un objet
-                        $query->bindValue('login',$pseudo, PDO::PARAM_STR);             //PDOStatement::bindValue — Associe une valeur à un paramètre
-                        $query->execute(); // Exécute la préparation
-
-                        while($data= $query->fetch())
+                        if($id !=0)
                         {
-                            if($data['message_read'] == 0)
+                            $query= $db->prepare('SELECT message_read FROM message WHERE message_destination= :login');       //PDO::prepare — Prépare une requête à l'exécution et retourne un objet
+                            $query->bindValue('login',$pseudo, PDO::PARAM_STR);             //PDOStatement::bindValue — Associe une valeur à un paramètre
+                            $query->execute(); // Exécute la préparation
+
+                            while($data= $query->fetch())
                             {
-                                $notification= 0;
-                                break;
+                                if($data['message_read'] == 0)
+                                {
+                                    $notification= 0;
+                                    break;
+                                }
+                                else
+                                {
+                                    $notification = 1;
+                                }
                             }
-                            else
-                            {
-                                $notification = 1;
-                            }
-                        }
                     ?>
 
                     <?php
-                        if($notification== 0)
-                        {
+                            if($notification== 0)
+                            {
                     ?>
-                        <a href="mon_profil.php">
-                            <div id="image_message">
-                                <img  src="images/message.png" class="imageflottante" alt="logo" id="logo" width="70" heigh="100" />
-                            </div>
-                        </a>
+                                <a href="mon_profil.php">
+                                    <div id="image_message">
+                                        <img  src="images/message.png" class="imageflottante" alt="noti_message" id="noti_message" width="70" heigh="100" />
+                                    </div>
+                                </a>
                     <?php
-                        }
+                            }
+                    ?>
+
+                            <a href="deconnexion.php">
+                                <div id="image_logout">
+                                    <img  src="images/logout.png" class="imageflottante" alt="logout" id="logout" width="40" heigh="100" />
+                                </div>
+                            </a>
+                    <?php       
+                        }    
                     ?>
 
 
@@ -73,7 +83,11 @@
                         
                         <!-- Page d'accueil -->
                         <dl>
-                            <dt><a href='home.php'> Accueil </a></dt>
+                            <div id="image_home">
+                                <a href="home.php">
+                                    <img  src="images/home.png" class="imageflottante" alt="logo" id="logo" width="40" heigh="100" />
+                                </a>
+                            </div>
                         </dl>
                         
                         <!-- Fruits et légumes -->
@@ -106,6 +120,11 @@
                             <dt><a href="connexion.php">Connexion</a></dt>
                         </dl>
                                     
+                        <!-- Inscription -->
+                        <dl>
+                            <dt><a href="inscription.php">S'inscrire</a></dt>
+                        </dl>
+                                    
                     </div>
                 </div>
             </nav>
@@ -119,6 +138,21 @@
             <nav>
                 <div id="conteneur_menu">
                     <div id="menu">
+
+                        <!-- Page d'accueil -->
+                        <dl>
+                            <div id="image_home">
+                                <a href="home.php">
+                                    <img  src="images/home.png" class="imageflottante" alt="logo" id="logo" width="40" heigh="100" />
+                                </a>
+                            </div>
+                        </dl>
+
+                        <!-- Fruits et légumes -->
+                        <dl>
+                            <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
+                        </dl>
+
                         <!-- Page d'achats -->
                         <dl>
                             <dt><a href="echange.php"> Echanges </a></dt>  
@@ -133,17 +167,7 @@
                                     </ul>
                                 </dd>
                         </dl>
-
-                        <!--  Actualités -->
-                        <dl>
-                            <dt><a href='news.php'> Actualités </a></dt>
-                        </dl>
-                                        
-                        <!-- Fruits et légumes -->
-                        <dl>
-                            <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
-                        </dl>
-                                          
+                                                     
                         <!-- Profil -->
                         <dl>
                             <dt><a href="mon_profil.php"><?php echo $pseudo ?></a></dt>
@@ -159,12 +183,7 @@
                         <dl>
                             <dt><a href="#">Forum</a></dt>
                         </dl>
-                                        
-                        <!-- Déconnexion -->
-                        <dl>
-                            <dt><a href="deconnexion.php">Déconnexion</a></dt>
-                        </dl>                      
-                                    
+                        
                     </div>
                 </div>
             </nav> 
@@ -178,6 +197,16 @@
             <nav>
                 <div id="conteneur_menu">
                     <div id="menu">
+
+                        <!-- Page d'accueil -->
+                        <dl>
+                            <div id="image_home">
+                                <a href="home.php">
+                                    <img  src="images/home.png" class="imageflottante" alt="logo" id="logo" width="40" heigh="100" />
+                                </a>
+                            </div>
+                        </dl>
+
                         <!-- Page d'achats -->
                         <dl>
                             <dt><a href="echange.php"> Echanges </a></dt>  
@@ -200,20 +229,15 @@
                                         
                         <!-- Fruits et légumes -->
                         <dl>
-                            <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
+                            <dt><a href="fruits_et_legumes.php">Fruits / Légumes</a></dt>
                         </dl>                 
                                         
                         <!-- Forum -->
                         <dl>
                             <dt><a href="#">Forum</a></dt>
                         </dl>
-                                        
-                        <!-- Déconnexion -->
-                        <dl>
-                            <dt><a href="deconnexion.php">Déconnexion</a></dt>
-                        </dl>
                                          
-                        <!-- Panier -->
+                        <!-- Administration -->
                         <dl>
                             <dt><a href="administration.php">Administration</a></dt>
                         </dl>
