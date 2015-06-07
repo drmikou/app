@@ -30,21 +30,21 @@
 							<form method="post" action="inscription.php" enctype="multipart/form-data">
 
 								<fieldset><legend>Identité </legend>
-									<label for="name">* Nom :</label>  <input name="name" type="text" id="name" /><br/>
-									<label for="surname">* Prénom :</label>  <input name="surname" type="text" id="surname" /><br/>
-									<label for="birth">* Date de naissance:</label>  <input name="birth" type="date" id="birth" /><br/>
+									<label for="name">* Nom :</label>  <input name="name" required type="text" id="name" /><br/>
+									<label for="surname">* Prénom :</label>  <input name="surname" required type="text" id="surname" /><br/>
+									<label for="birth">* Date de naissance:</label>  <input name="birth" required type="date" id="birth" /><br/>
 								</fieldset>
 
 								<fieldset><legend>Identifiants</legend>
-									<label for="pseudo">* Pseudo :</label>  <input name="pseudo" type="text" id="pseudo" /> (le pseudo doit contenir entre 3 et 15 caractères)<br/>
-									<label for="password">* Mot de Passe : </label><input type="password" name="password" id="password" /><br/>
-									<label for="confirm">* Confirmer le mot de passe : </label><input type="password" name="confirm" id="confirm"/>
+									<label for="pseudo">* Pseudo :</label>  <input name="pseudo" required type="text" id="pseudo" /> (le pseudo doit contenir entre 3 et 15 caractères)<br/>
+									<label for="password">* Mot de Passe : </label><input type="password" required name="password" id="password" /><br/>
+									<label for="confirm">* Confirmer le mot de passe : </label><input type="password" required name="confirm" id="confirm"/>
 								</fieldset>
 									
 								<fieldset><legend>Adresse</legend>
-									<label for="street">*Rue : </label><input type="text" name="street" id="street" />
+									<label for="street">*Rue : </label><input type="text" required name="street" id="street" />
 									<label for="sup">Complément d'adresse : </label><input type="text" name="sup" id="sup" /> <br/>
-									<label for="town">* Ville : </label><input type="text" name="town" id="town" />
+									<label for="town">* Ville : </label><input type="text" required name="town" id="town" />
                                                                         <label for="Département">* Département : </label>
                                                                             <select name="dep">
                                                                                 <?php
