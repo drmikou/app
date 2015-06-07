@@ -10,22 +10,22 @@
         }
     ?>
 
-    <div class="titre"> Mon profil</h2> </div>
+    <div class="titre">  Mon profil </div>
 
-        <div class="bloc">
-            Pseudo : <br>     <div class="donnee"> <?php echo $_SESSION['pseudo'] ?> </div> <br>
+        <div class="bloc"> 
+             <img  src="images/profil.png" class="imageflottante" alt="profil" id="profil" width="30" /><div class= "decalage">Pseudo :</div> <br>     <div class="donnee"> <?php echo $_SESSION['pseudo'] ?> </div> <br>
         </div>
 
         <div class="bloc">
-             E-mail : <br>     <div class="donnee"> <?php echo $data['user_mail'] ?> </div> <br>
+             <img  src="images/profil_mail.png" class="imageflottante" alt="mail" id="mail" width="30" /><div class= "decalage"> E-mail : </div><br>     <div class="donnee"> <?php echo $data['user_mail'] ?> </div> <br>
         </div>
 
         <div class="bloc">
-             Ma région : <br>     <div class="donnee"> <?php echo $data['user_region'] ?> </div> <br>
+              <img  src="images/region.png" class="imageflottante" alt="region" id="region" width="30" /><div class= "decalage">Ma région : </div><br>     <div class="donnee"> <?php echo $data['user_region'] ?> </div> <br>
         </div>
 
         <div class="bloc">
-             Ma note : <br>     <div class="donnee"> <?php echo $data['user_rate'] ?> </div> <br>
+              <img  src="images/note.png" class="imageflottante" alt="note" id="note" width="30" /><div class= "decalage">Ma note : </div><br>     <div class="donnee"> <?php echo $data['user_rate'] ?> </div> <br>
         </div>
 
         <div class="bloc">

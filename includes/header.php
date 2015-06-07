@@ -150,7 +150,8 @@
 
                         <!-- Fruits et légumes -->
                         <dl>
-                            <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
+                            <img  src="images/fruit.png" class="imageflottante" alt="fruit" id="fruit" width="40" heigh="100" />
+                            <!-- <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt> -->
                         </dl>
 
                         <!-- Page d'achats -->

@@ -547,6 +547,11 @@
             margin-top: 1em;
         }
 
+        .decalage
+        {
+            margin-left: 6%;
+        }
+
     /* -----------  Connexion ----------- */
         #form_co
         {

@@ -14,15 +14,15 @@
 	<div class= "titre">
 
 		<div class= "de">
-			De:
+			<img  src="images/profil.png" class="imageflottante" alt="de" id="de" width="30" /> De:
 		</div>
 
 		<div class= "date">
-			Date:
+			<img  src="images/calendar.png" class="imageflottante" alt="calendar" id="calendar" width="30" /> Date:
 		</div>
 
 		<div class= "contenu">
-			Contenu:
+			<img  src="images/content.png" class="imageflottante" alt="content" id="content" width="30" />Contenu:
 		</div>
 
 	</div>
