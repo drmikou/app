@@ -75,12 +75,6 @@
             background: url(images/header.png) repeat;
         }
 
-        /*
-        #titre_principal
-        {
-            display: inline-block;
-        }*/
-
         /* Ecriture titre du site */
         header h1
         {
@@ -92,6 +86,17 @@
             margin-left: 1%;
             margin-top: 60px;
             text-shadow: 0px 0px 0px #4CA66B;
+        }
+
+        #sous_titre
+        {
+            display: block;
+            color: #173B0B;
+            font-family: "Rumpelstiltskin", sans-serif;
+            font-size: 1.8em;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 1%;
         }
 
         header h1 a
@@ -124,6 +129,12 @@
         {
             z-index:-1;
             position: relative;
+        }
+
+        #image_message
+        {
+            display: inline-block;
+            margin-left: 5em;
         }
 
     /* ------------- Menu déroulant -------------*/
@@ -445,6 +456,8 @@
     {
         width: 3em;
     }
+
+
     /* ----------- Coté page profil ----------- */
 
         .cote
@@ -553,6 +566,16 @@
             margin-top: 1%;
         }
 
+        #option
+        {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            left: 10%;
+            z-index:1;   
+        }
+
         #message_envoyer fieldset
         {
         }
@@ -569,7 +592,9 @@
             display: inline-block;
             border-bottom: 0.1em solid #808080;
             width: 59%;
-            padding-bottom: 2%;
+            padding-bottom: 1%;
+            margin-left: 10%;
+            margin-top: 1.5%;
         }
 
         #message_voir .de
@@ -590,11 +615,20 @@
             margin-left: 10em;
         }
 
+        #message_voir .data_red
+        {
+            display: block;
+            margin-left: 31%;
+            margin-top: 1%;
+            width: 50%;
+        }
+
         #message_voir .data
         {
             display: block;
             margin-left: 31%;
             margin-top: 1%;
+            opacity: 0.5;
         }
 
         #message_voir .de2

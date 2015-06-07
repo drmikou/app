@@ -10,7 +10,7 @@
 <!-- Ajout dans la base -->
 	<?php
 
-		$error = 0;
+		
 
 		if (isset($_POST['destinataire']) && isset($_POST['contenu']))
 		{
@@ -31,7 +31,9 @@
 					$query->bindValue(':contenu', $contenu, PDO::PARAM_STR);
 					$query->execute();
 					echo "Votre message a bien été envoyé!";
+					$error = 0;
 					break;
+
 				}
 				else
 				{

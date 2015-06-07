@@ -1,3 +1,8 @@
+<!-- CONNEXION A LA DB -->
+    <?php
+        include("includes/database_connection.php");
+    ?>
+
 <header>
     <div class="centrage">
         <div id="logo_titre">
@@ -9,8 +14,50 @@
                 <h1>    
                     <a href="home.php">
                         Veg A table
+
+
+                    <?php
+
+
+                        $query= $db->prepare('SELECT message_read FROM message WHERE message_destination= :login');       //PDO::prepare — Prépare une requête à l'exécution et retourne un objet
+                        $query->bindValue('login',$pseudo, PDO::PARAM_STR);             //PDOStatement::bindValue — Associe une valeur à un paramètre
+                        $query->execute(); // Exécute la préparation
+
+                        while($data= $query->fetch())
+                        {
+                            if($data['message_read'] == 0)
+                            {
+                                $notification= 0;
+                                break;
+                            }
+                            else
+                            {
+                                $notification = 1;
+                            }
+                        }
+                    ?>
+
+                    <?php
+                        if($notification== 0)
+                        {
+                    ?>
+                        <a href="mon_profil.php">
+                            <div id="image_message">
+                                <img  src="images/message.png" class="imageflottante" alt="logo" id="logo" width="70" heigh="100" />
+                            </div>
+                        </a>
+                    <?php
+                        }
+                    ?>
+
+
                     </a>
                 </h1>
+                <br>
+
+                <div id="sous_titre">
+                    Votre site d'échanges
+                </div>
             </div>
         </div>
     </div>
@@ -116,12 +163,7 @@
                         <!-- Déconnexion -->
                         <dl>
                             <dt><a href="deconnexion.php">Déconnexion</a></dt>
-                        </dl>
-                                         
-                        <!-- Panier -->
-                        <dl>
-                            <dt><a href="panier.php">Panier</a></dt>
-                        </dl>
+                        </dl>                      
                                     
                     </div>
                 </div>
