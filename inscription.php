@@ -11,21 +11,22 @@
 <?php
 	include("includes/database_connection.php");
 	?>
-
-
-    <body>
-		<div id="bloc_page">    
-			<!-- Corps de l'inscription'-->	            
+	<body>
+		<div id="bloc_page">                
 			<section>
 				<article>
+
+<?php
+						if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer qu'on est sur la page de formulaire
+						{
+						?>
+    
 					<h1>Inscription</h1>
 
 					<!-- FORMULAIRE-->	  
-					²<?php
-						if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer qu'on est sur la page de formulaire
-						{
 					
-?>
+					
+
 							<form method="post" action="inscription.php" enctype="multipart/form-data">
 
 								<fieldset><legend>Identité </legend>
@@ -72,6 +73,7 @@
 								<p>Les champs précédés d un * sont obligatoires</p>
 								<p><input type="submit" name="valider" value="S'inscrire" /></p>
 							</form>
+							
 						<?php
 						
 						}
@@ -96,7 +98,7 @@
 					?>	
                                         
                                       
-?>
+
 					<?php // Récupération des variables
 					if(isset($_POST['valider'])){
 						
@@ -271,41 +273,9 @@
 		
 		
 		
-<<<<<<< HEAD
-		require 'phpmailer/PHPMailerAutoload.php';
-		$mail = new PHPMailer;
 
+		
 
-		$mail->isSMTP();                                      
-		$mail->Host = 'smtp.gmail.com';  
-		$mail->SMTPAuth = true;                               
-		$mail->Username = 'veegatable@gmail.Com';                 
-		$mail->Password = 'lestomatescbon';                           
-		$mail->SMTPSecure = 'tls';                            
-		$mail->Port = 587;                                    
-
-		$mail->From = 'Support@VegATable.com'; 
-		$mail->FromName = 'VegATable';
-		$mail->addAddress($email);     
-
-		$mail->isHTML(true);                                  
-
-		$mail->Subject = 'Confirmation de votre inscription a la communaute VegATable';
-		$mail->Body    = 'Bonjour '.stripslashes(htmlspecialchars($_POST['name'])).' '.stripslashes(htmlspecialchars($_POST['surname'])).', nous avons le plaisir de confirmer votre inscription à la communaute VegATable dédiee aux achats et echanges de fruits et legumes proches de votre region !';
-						  
-
-		$mail->AltBody = 'Le mail est envoyé';
-
-		if(!$mail->send())
-		{
-		    echo 'Le message n\'a pas été envoyé, vérifiez votre adresse email.';
-		    echo 'Mailer Error: ' . $mail->ErrorInfo;
-		}
-		else
-		{
-		    echo 'Un mail de confirmation a été envoyé à votre adresse email.';
-		}
-=======
 require 'includes/phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 
@@ -336,7 +306,7 @@ if(!$mail->send()) {
 } else {
     echo 'Un mail de confirmation a été envoyé à votre adresse email.';
 }
->>>>>>> origin/master
+
    }
    else
    {
