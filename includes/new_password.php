@@ -5,7 +5,7 @@
 	
 	<form method="post" action="new_password.php" enctype="multipart/form-data">
 	
-	<label for="email">* Rentrez votre adresse email :</label>  <input name="email" type="email" id="email" /><br/>
+	<label for="email">Rentrez votre adresse email :</label>  <input name="email" type="email" id="email" /><br/>
 	<p><input type="submit" name="valider" value="Lancer la reinitialisation de mot de passe" /></p>
 
 	<?php
