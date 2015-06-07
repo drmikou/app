@@ -16,8 +16,7 @@
             <div class="box">                          
                 <ul class="titre_list"> Paramètre du compte </ul>
                     <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('mes_informations');">Mes informations</span> </li>
-                    <li> Changer mes informations </li>
-                    <li> Gérer mes alertes</li>
+                    <li><a href='changer_info.php'> Changer mes informations </a> </li>
                     <li> Supprimer mon compte</li>
             </div>
         </section>        
