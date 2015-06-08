@@ -5,11 +5,11 @@
 
 		<form method="post" action="register.php" enctype="multipart/form-data">
 
-			<fieldset><legend>Identité </legend>
+			<h4>Idedede</h4>
 				<label for="name">* Nom :</label>  <input name="name" type="text" id="name" /><br/>
 				<label for="surname">* Prénom :</label>  <input name="surname" type="text" id="surname" /><br/>
 				<label for="birth">* Date de naissance:</label>  <input name="birth" type="date" id="birth" /><br/>
-			</fieldset>
+			
 
 			<fieldset><legend>Identifiants</legend>
 				<label for="pseudo">* Pseudo :</label>  <input name="pseudo" type="text" id="pseudo" /> (le pseudo doit contenir entre 3 et 15 caractères)<br/>

@@ -10,6 +10,7 @@
                     <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('mon_profil_public');">Mon profil public</span> </li>
                     <li> Tous vos commentaires </li>
                     <li> Mes évaluations </li>
+                    <li><a href='voir_autre_membre.php'> Voir le profil d'un membre </a> </li>
             </div>
         </section>
                         

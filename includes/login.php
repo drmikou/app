@@ -20,8 +20,7 @@
 ?>
 <div id="form_co">
 	<form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
-		<fieldset>	<!-- Used to group related elements in a form. Draws a box around the related elements. -->
-			<legend>Identifiant</legend> <!-- defines a caption for the <fieldset> element. -->
+			<h4>Identifiant</h4> <!-- defines a caption for the <fieldset> element. -->
 				<!-- Champ Login -->
 				<p>
 					<label for="login">Login :</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
@@ -36,7 +35,6 @@
 				<p>
 	            	<input type="submit" name="submit" value="Identification" />
 	            </p>
-	    </fieldset>
 	</form>
 </div>
 

@@ -18,8 +18,21 @@
 	echo '<h1>Connexion</h1>';
 	if ($id!=0) erreur(ERR_IS_CO);
 ?>
+<form class="pure-form">
+    <fieldset>
+        <legend>A compact inline form</legend>
 
-<form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <label for="remember">
+            <input id="remember" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+</form>
+<form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post" class="pure-form">
 	<fieldset>	<!-- Used to group related elements in a form. Draws a box around the related elements. -->
 		<legend>Identifiant</legend> <!-- defines a caption for the <fieldset> element. -->
 			<!-- Champ Login -->
@@ -34,7 +47,7 @@
             	<input type="password" name="password" id="password" value="" />
 			</p>
 			<p>
-            	<input type="submit" style="text-decoration:none" name="submit" value="Identification" />
+            		<input type="submit" style="text-decoration:none" name="submit" value="Identification" />
             </p>
     </fieldset>
 </form>

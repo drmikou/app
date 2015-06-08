@@ -5,9 +5,11 @@
 
             <div id="box1">
                 <section>
-                    <h2>Qui sommes nous?</h2>
+                    <div id= "qui">
+                        <h2>Qui sommes nous?</h2>
+                    </div>    
                     <div id="cadre-image">
-                        <img src="images/footer.jpg" class="imageflottante" alt="cuisine" id="image-footer" >
+                        <img src="images/footer.jpg" class="imageflottante" alt="cuisine" id="image-footer" width="346" height="413">
                     </div>
                     <p>VegAtable est LE site d'échange de fruit et légumes en ligne destiné aux particuliers. Ce site référence les utilisateurs près de chez vous afin de vous mettre en relation pour des échanges en mains propres!</p>
                 </section>
@@ -18,10 +20,8 @@
             <div id="box2">
                 <section>
                     <ul>
-
                         <li>
-                            <h2>Foire aux questions</h2>
-                            <p><a href="faq.php">Toutes vos questions sans réponses se trouvent ici en détail.</a></p>
+                            <a href="faq.php"><h2>Foire aux questions</h2></a>
                         </li>
 
                         <li>
@@ -32,6 +32,7 @@
                             <h2><a href="#">Mentions légales</a></h2>
                         </li>
 
+                        <div id= "reseau">
                             <a href="https://www.facebook.com/vegatableisep?skip_nax_wizard=true&ref_type=logout_gear">
                                 <img  src="images/facebook.png" class="imageflottante" alt="facebook" id="facebook" width="70" />
                             </a>
@@ -43,6 +44,7 @@
                             <a href="#">
                                 <img  src="images/mail.png" class="imageflottante" alt="mail" id="mail" width="70" />
                             </a>
+                        </div>    
                     </ul>
                 </section>
             </div>

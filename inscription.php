@@ -14,14 +14,12 @@
 	<body>
 		<div id="bloc_page">                
 			<section>
-				<article>
 
 <?php
 						if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer qu'on est sur la page de formulaire
 						{
 						?>
     
-					<h1>Inscription</h1>
 
 					<!-- FORMULAIRE-->	  
 					
@@ -29,19 +27,16 @@
 
 							<form method="post" action="inscription.php" enctype="multipart/form-data">
 
-								<fieldset><legend>Identité </legend>
+								<h4>Inscription </h4>
 									<label for="name">* Nom :</label>  <input name="name" required type="text" id="name" /><br/>
 									<label for="surname">* Prénom :</label>  <input name="surname" required type="text" id="surname" /><br/>
 									<label for="birth">* Date de naissance:</label>  <input name="birth" required type="date" id="birth" /><br/>
-								</fieldset>
-
-								<fieldset><legend>Identifiants</legend>
+								
 									<label for="pseudo">* Pseudo :</label>  <input name="pseudo" required type="text" id="pseudo" /> (le pseudo doit contenir entre 3 et 15 caractères)<br/>
 									<label for="password">* Mot de Passe : </label><input type="password" required name="password" id="password" /><br/>
 									<label for="confirm">* Confirmer le mot de passe : </label><input type="password" required name="confirm" id="confirm"/>
-								</fieldset>
+								
 									
-								<fieldset><legend>Adresse</legend>
 									<label for="street">*Rue : </label><input type="text" required name="street" id="street" />
 									<label for="sup">Complément d'adresse : </label><input type="text" name="sup" id="sup" /> <br/>
 									<label for="town">* Ville : </label><input type="text" required name="town" id="town" />
@@ -57,12 +52,9 @@
                                                                                         $reponse->closeCursor(); // Termine le traitement de la requête
                                                                                  ?>
                                                                             </select>             
-								</fieldset>
 								
-								<fieldset><legend>Contacts</legend>
 									<label for="email">* Votre adresse Mail : </label><input type="email" required name="email" id="email" /><br/>
 									<label for="phone">Votre numéro de téléphone: </label><input type="tel" name="phone" id="phone" /><br/>
-								</fieldset>
 
 
 								<!--<fieldset><legend>Profil sur le forum</legend>
@@ -349,7 +341,6 @@ if(!$mail->send()) {
                               
 					
 
-				</article>
 			</section>
 		</div>
 

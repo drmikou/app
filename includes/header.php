@@ -108,11 +108,6 @@
                         <!-- Page de recettes -->         
         	            <dl>
         	                <dt><a href="recette.php">Recettes</a></dt>
-        	                    <dd>
-        	                        <ul>
-        	                            <li>Top recettes</li>
-        	                        </ul>
-        	                    </dd>
         	            </dl>                                                            
                                                              
                          <!-- Connexion -->
@@ -150,8 +145,7 @@
 
                         <!-- Fruits et légumes -->
                         <dl>
-                            <img  src="images/fruit.png" class="imageflottante" alt="fruit" id="fruit" width="40" heigh="100" />
-                            <!-- <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt> -->
+                            <dt><a href="fruits_et_legumes.php">Fruits et Légumes</a></dt>
                         </dl>
 
                         <!-- Page d'achats -->

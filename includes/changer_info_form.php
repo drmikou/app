@@ -1,6 +1,6 @@
 <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
-    <fieldset>
-        <legend>Changer mon mot de passe</legend>
+
+        <h4>Changer mon mot de passe</h4>
             <p>
                 <label for="mdp_actuel">Mot de passe actuel</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
                 <input type="password" name="mdp_actuel" id="mdp_actuel" value=""/>
@@ -19,13 +19,12 @@
             <p>
                 <input type="submit" name="submit" value="Changer mon mot de passe" />
             </p>
-    </fieldset>
+
 </form>
 
-
+<br>
 <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post"> 
-    <fieldset>
-        <legend>Changer mon adresse mail</legend>
+        <h4>Changer mon adresse mail</h4>
             <p>
                 <label for="mdp_actuel_mail">Mot de passe actuel</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
                 <input type="password" name="mdp_actuel_mail" id="mdp_actuel_mail" value=""/>
@@ -44,14 +43,11 @@
             <p>
                 <input type="submit" name="submit" value="Changer mon adresse mail" />
             </p>
-    </fieldset>
 </form>
-
+<br>
 
 <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
-    
-    <fieldset>
-        <legend>Changer mon adresse</legend>
+        <h4>Changer mon adresse</h4>
             <p>
                 <label for="street_new">Ma nouvelle rue:</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
                 <input type="text" name="street_new" id="street_new" value=""/>
@@ -70,15 +66,12 @@
             <p>
                 <input type="submit" name="submit" value="Changer mon adresse" />
             </p>
-    </fieldset>
-    
 </form>
 
+<br>
 
 <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" method="post">
-    
-    <fieldset>
-        <legend>Changer mon numéro de téléphone</legend>
+        <h4>Changer mon numéro de téléphone</h4>
             <p>
                 <label for="phone_new">Mon nouveau numéro de téléphone:</label> <!-- it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control. -->
                 <input type="tel" name="phone_new" id="phone_new" value=""/>
@@ -87,6 +80,5 @@
             <p>
                 <input type="submit" name="submit" value="Changer mon numéro de téléphone" />
             </p>
-    </fieldset>
     
 </form>

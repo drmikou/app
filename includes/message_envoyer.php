@@ -4,7 +4,8 @@
 	?>
 
 <!-- Formulaire -->
-	<?php include("includes/message_envoyer_form.php"); ?>
+	<div class= "centrage2">
+		<?php include("includes/message_envoyer_form.php"); ?>
 
 
 <!-- Ajout dans la base -->
@@ -53,3 +54,4 @@
 			}
 		}
 	?>
+	</div>

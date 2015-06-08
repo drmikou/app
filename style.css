@@ -143,6 +143,12 @@
             margin-left: 2em;
         }
 
+        #image_accueil
+        {
+            display: inline-block;
+        }
+
+
     /* ------------- Menu déroulant -------------*/
 
         #conteneur_menu
@@ -274,7 +280,9 @@
             border-radius: 5px 5px 0px 0px;
             text-transform: none;
             font-size: 1.3em;
-            color: #FFFFF;
+            font-family: 'Quick';  
+            text-align: center;
+            color: #D8D8D8; 
         }
 
         .information .contenu
@@ -283,6 +291,7 @@
             position: relative;
             height: 7em;
             word-wrap: break-word;
+            text-align: center;
 
         }
 
@@ -468,7 +477,25 @@
         width: 3em;
     }
 
+    #bloc_region_voir
+    {
+        color: red;
+        width: 10%;
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+        margin-left: 5em;
+    }
 
+    #affichage_login_voir,  #affichage_mail_voir, #affichage_region_voir, #affichage_rate_voir
+    {
+        text-align: center;
+        padding-bottom: 0.5em;
+        display: inline;
+        margin-top: 1em;
+        margin-left: 5em;
+        width: 3em;
+    }
     /* ----------- Coté page profil ----------- */
 
         .cote
@@ -951,7 +978,7 @@
             margin-left: auto;
             margin-right: auto;
             overflow: hidden;
-            padding: 0em 0em 4em 0em;
+            padding: 0em 0em 1em 0em;
             text-shadow: 1px 1px 0px #FFFFFF;
             color: #777777;
             width: 80%;
@@ -960,10 +987,10 @@
 
         #footer-content h2
         {
-            padding: 1em 0em 0em 0em;
+            padding: 0.5em 0em 0em 0em;
             text-shadow: 1px 1px 0px #FFFFFF;
             text-transform: none;
-            font-size: 1.1em;
+            font-size: 1em;
             color: black;
         }
 
@@ -978,6 +1005,7 @@
         #footer-content #box1 #cadre-image
         {
             display: inline-block;
+            width: 25%;
 
         }
 
@@ -997,12 +1025,13 @@
             width: 32%;
             overflow: hidden;
             margin-right: 2em;
+            margin-left: 1%;
         }
 
         #footer-content #box2 a
         {
             text-decoration: none;
-            color: #777777;
+            color: black;
         }
 
 
@@ -1023,6 +1052,17 @@
         {
             border-top: 0.1em solid #808080 ;
 
+        }
+
+        #reseau
+        {
+            margin-left: 15%;
+            margin-top: 15%;
+        }
+
+        #qui
+        {
+            margin-left: 5%;
         }
     /* --------------------  --------------------*/
     #Nos_Produits img
@@ -1113,73 +1153,76 @@
     }
 
 
-
-    /* -------------------- Drag & Drop --------------------*/
-
-    .dropper
+    form
     {
-        margin: 50px 10px 10px 50px;
-        width: 400px;
-        height: 250px;
-        background-color: #555;
-        border: 1px solid #111;
-        
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        
-        -moz-transition: all 200ms linear;
-        -webkit-transition: all 200ms linear;
-        -o-transition: all 200ms linear;
-        transition: all 200ms linear;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 30px 30px 20px 30px;
+        color: #666;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        background: #F8F8F8;
     }
 
-    .drop_hover
+    h4
     {
-        -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8) inset;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.8) inset;
+        font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+        padding: 20px 0px 20px 40px;
+        display: block;
+        margin: -30px -30px 10px -30px;
+        color: #FFF;
+        background: #9DC45F;
+        text-shadow: 1px 1px 1px #949494;
+        border-radius: 5px 5px 0px 0px;
+        -webkit-border-radius: 5px 5px 0px 0px;
+        -moz-border-radius: 5px 5px 0px 0px;
+        border-bottom:1px solid #89AF4C;
     }
 
-    .draggable
+    textarea, select
     {
-        display: inline-block;
-        margin: 20px 10px 10px 20px;
-        padding-top: 20px;
-        width: 80px;
-        height: 60px;
-        color: #3D110F;
-        background-color: #822520;
-        border: 4px solid #3D110F;
-        text-align: center;
-        font-size: 2em;
-        cursor: move;
-        
-        -moz-transition: all 200ms linear;
-        -webkit-transition: all 200ms linear;
-        -o-transition: all 200ms linear;
-        transition: all 200ms linear;
-        
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
+        height: 30px;
+        width: 100%;
+        padding: 0px 0px 0px 10px;
+        margin-top: 2px;
+        border: 1px solid #E5E5E5;
+        outline: 0;
+        -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+        box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+        font: normal 14px/14px Arial, Helvetica, sans-serif;
     }
-    
-    /*    ECHANGE */
-#bloc_echange
-        {
-            width: 70%; /* +: plus large */
-            margin: auto;
-            z-index: -1;
-            font-size: 0.9em;
-            padding-top: 0em;
-            padding-bottom: 1em;
-            float:right;
 
-        }
+    textarea
+    {
+        height:100px;
+        padding-top: 10px;
+    }
 
- article3
-        {
-            width: 70%;
-            margin-right: 15px;
-            background: url('images/fond1.8.png');
-        }
+    input[type="submit"]
+    {
+        background-color: #9DC45F;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-border-radius: 5px;
+        border: none;
+        padding: 10px 25px 10px 25px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #949494;
+    }
+
+    input[type="submit"]:hover
+    {
+        background-color:#80A24A;
+    }
+
+    .centrage2
+    {
+        margin-left: 20%;
+    }
+
+
+    textarea
+    {
+        resize:none;
+    }

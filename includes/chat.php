@@ -1,12 +1,12 @@
 <div id="bloc_chat" class="centrage">
-	<article>
 		<?php // VISITEUR
 			if($id==0)
 			{
 		?>
 				<div id="chat">					
 				<?php
-					$allmsg = $db->query('SELECT * FROM chat ');
+
+					$allmsg = $db->query('SELECT * FROM chat ORDER BY chat_id DESC LIMIT 0, 2');
 					while($msg = $allmsg->fetch())
 					{
 				?>
@@ -24,7 +24,7 @@
 		?>
 				<div id="chat">					
 				<?php
-					$allmsg = $db->query('SELECT * FROM chat ');
+					$allmsg = $db->query('SELECT * FROM chat  ORDER BY chat_id DESC LIMIT 0, 10');
 					while($msg = $allmsg->fetch())
 					{
 				?>
@@ -45,5 +45,4 @@
 		<?php
 			}
 		?> 
-	</article>
 </div>
