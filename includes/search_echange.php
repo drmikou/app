@@ -37,7 +37,7 @@
 				$i=$i+1;
 			}
 		}
-		echo $request;
+		//echo $request;
 
 		$reponse = $db->query($request);
 		$presence_reponse = 0;
