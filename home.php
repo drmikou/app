@@ -8,7 +8,7 @@
 			<div id="bloc_page"> 
 
 				<div id="home_image">
-					<img  src="images/orange.jpg" class="imageflottante" alt="verger" id="verger" width="102.5%"/>
+					<img  src="images/fruits-et-legumes-de-saison.jpg" class="imageflottante" alt="verger" id="verger" width="105%"/>
 				</div>
 
 				<div class="information"> 
