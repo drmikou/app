@@ -871,7 +871,7 @@
         }
 
         /* Position, police article */
-        article, article2, aside
+        article, article2, article3, aside
         {
             margin-top: 60px;
             font-family: "QuickBook";
@@ -1226,3 +1226,23 @@
     {
         resize:none;
     }
+    
+     /*-------------- ECHANGE -----------------------*/
+	#bloc_echange
+        {
+            width: 70%; /* +: plus large */
+            margin: auto;
+            z-index: -1;
+            font-size: 0.9em;
+            padding-top: 0em;
+            padding-bottom: 1em;
+            float:right;
+
+        }
+
+ 	article3
+        {
+            width: 70%;
+            margin-right: 15px;
+            background: url('images/fond1.8.png');
+        }
