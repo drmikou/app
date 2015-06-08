@@ -20,7 +20,7 @@
                 <ul class="titre_list"> Paramètre du compte </ul>
                     <li><span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('mes_informations');">Mes informations</span> </li>
                     <li><a href='changer_info.php'> Changer mes informations </a> </li>
-                    <li> Supprimer mon compte</li>
+                    <li><a href='./delete_profil.php'> Supprimer mon compte </a></li>
             </div>
         </section>        
 
