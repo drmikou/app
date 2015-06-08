@@ -4,7 +4,7 @@
 	?>
 
 <!-- FORMULAIRE -->
-<form method="get" action="recherche.php">
+<form method="get" action="recette.php">
 	Recherche:
 	<input type="text" name="barre_recherche"/>
 	<input type="submit" value="Recherche!"/>
@@ -37,7 +37,7 @@
 				$i=$i+1;
 			}
 		}
-		echo $request;
+		//echo $request;
 
 		$reponse = $db->query($request);
 		$presence_reponse = 0;
@@ -55,8 +55,9 @@
 							$c2= str_ireplace( $mot,'<span class="surlign'.$j.'">'.$mot.'</span>', $c2);
 						}
 					}
+					echo  '<h1> <img src="images/recettes/'.$donnees["titre"].'.jpg" alt="Image flottante2" class="imageflottante"width="100" heigh="100" />'.$donnees["titre"].'</h1>';
 			?>
-				<h1> <?php echo $c2; ?></h1>
+				
 			<?php 
 				$i=0;
 				$c=$donnees["contenu"];
