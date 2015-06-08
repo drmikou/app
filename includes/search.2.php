@@ -35,7 +35,7 @@
 			}
 		}
 		$request=$request." ORDER BY fruit_Legumes_nom ";
-		echo $request;
+		//echo $request;
 		$reponse = $db->query($request);
 		while ($donnees = $reponse->fetch()){
 ?>
