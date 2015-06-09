@@ -5,30 +5,10 @@
 ?>
 
     <body>
-        <!-- Aside de l'échange-->
-        <?php include("includes/aside_echange.php"); ?>
-        
-	<!-- Ajouter -->
-        <div id="ajouter">
-            <?php include("includes/echange_ajouter.php"); ?>
-        </div>
-        
-        <script type="text/javascript">
-            afficher_cacher('ajouter');
-        </script>
-
-        <!-- Choisir -->
-        <div id="choisir">
-            <?php include("includes/echange_choisir.php"); ?>
-        </div>
-        
-        <script type="text/javascript">
-            afficher_cacher('choisir');
-        </script>
-        
-         <div id="bloc_echange">
+        <div id="bloc_echange">
             <section>
-                <?php include("includes/search_echange.php"); ?>
+                <?php /*include("includes/search_echange.php"); */
+		      include("includes/echange.php");?>
             </section>
         </div>
         
@@ -37,4 +17,3 @@
     </body>
 
 </html>
-
