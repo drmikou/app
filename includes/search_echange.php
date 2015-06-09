@@ -88,8 +88,8 @@
 	//  AFFICHAGE PAR DEFAUT ORDONNER PAR DATE La PLUS RECENTE
 	else
 	{
-		$reponse = $db->query('SELECT * FROM echanges');		// Initialisation de la variable réponse								// On divise ce echanges_prod2 en mots
-		$request = "SELECT * FROM echanges order by echange_date DESC ";					// On récupère tout le echanges_prod2 de la table echange:
+		$reponse = $db->query('SELECT * FROM echange');		// Initialisation de la variable réponse								// On divise ce echanges_prod2 en mots
+		$request = "SELECT * FROM echange order by echange_date DESC ";					// On récupère tout le echanges_prod2 de la table echange:
 
 
 		$reponse = $db->query($request);
