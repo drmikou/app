@@ -3,25 +3,25 @@
         /* Titre du site */
         @font-face {
             font-family: 'PhatRave';
-            src: url('polices/PhatRave.ttf');
+            src: url('../vue/polices/PhatRave.ttf');
         }
 
         /* Menu du site */
         @font-face {
             font-family: 'Rumpelstiltskin';
-            src: url('polices/Rumpelstiltskin.ttf');
+            src: url('../vue/polices/Rumpelstiltskin.ttf');
         }
 
         /* Titre des articles */
         @font-face {
             font-family: 'Quick';
-            src: url('polices/Quicksand_Bold.otf');
+            src: url('../vue/polices/Quicksand_Bold.otf');
         }
 
         /* Corps des articles */
         @font-face {
             font-family: 'QuickBook';
-            src: url('polices/Quicksand_Book.otf');
+            src: url('../vue/polices/Quicksand_Book.otf');
         }
 
 
@@ -542,7 +542,7 @@
             color: #008000;
         }
 
-        #ajouter, #actualite_ajouter, #actualite_supprimer, #membre_supprimer
+        #ajouter, #actualite_ajouter, #actualite_supprimer form, #membre_supprimer form
         {
             display: inline-block;
             margin-left: auto;
@@ -550,13 +550,9 @@
             position: relative;
             left: 10%;
             z-index:1;
+            width: 50%;
         }
 
-        #ajouter fieldset, #actualite_ajouter fieldset, #actualite_supprimer fieldset, #membre_supprimer fieldset
-        {
-            width: 50%;
-            margin-top: 1em;
-        }
 
         #choisir
         {
@@ -587,12 +583,13 @@
             margin-top: 1%;
         }
 
-        #inscription
+        #inscription a
         {
-            margin-left: 40%;
+            margin-left: 32%;
             margin-top: 1%;
-            font-size: 2em;
-            color: black;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: #008000;
         }
 
 
@@ -619,18 +616,15 @@
             z-index:1;   
         }
 
-        #message_envoyer fieldset
-        {
-        }
 
-        #message_voir
+        #boite_reception
         {
             display: inline-block;
             width: 40%;
             margin-left: 10%;
         }
 
-        #message_voir .titre
+        #boite_reception .titre
         {
             display: inline-block;
             border-bottom: 0.1em solid #808080;
@@ -640,25 +634,25 @@
             margin-top: 1.5%;
         }
 
-        #message_voir .de
+        #boite_reception .de
         {
             display: inline-block;
 
         }
 
-        #message_voir .date
+        #boite_reception .date
         {
             display: inline-block;
             margin-left: 8em;
         }
 
-        #message_voir .contenu
+        #boite_reception .contenu
         {
             display: inline-block;
             margin-left: 10em;
         }
 
-        #message_voir .data_red
+        #boite_reception .data_red
         {
             display: block;
             margin-left: 31%;
@@ -666,7 +660,7 @@
             width: 50%;
         }
 
-        #message_voir .data
+        #boite_reception .data
         {
             display: block;
             margin-left: 31%;
@@ -674,26 +668,24 @@
             opacity: 0.5;
         }
 
-        #message_voir .de2
+        #boite_reception .de2
         {
             display: inline-block;
             width: 2.5%;
         }
 
-        #message_voir .date2
+        #boite_reception .date2
         {
             display: inline-block;
             margin-left: 8em;
 
         }
 
-        #message_voir .contenu2
+        #boite_reception .contenu2
         {
             display: inline-block;
             margin-left: 6em;
         }
-
-
 
 
     /* ----------- Voir les actualités ----------- */
@@ -871,7 +863,7 @@
         }
 
         /* Position, police article */
-        article, article2, article3, aside
+        article, article2, aside
         {
             margin-top: 60px;
             font-family: "QuickBook";
@@ -894,7 +886,7 @@
         {
             width: 73%;
             margin-right: 15px;
-	        background: #F8F8F8;
+            background: url('images/fond1.8.png') ;
         }
 
         article2
@@ -961,72 +953,6 @@
     {
         margin-left: 0px;
     }
-
-	/*-------------------- Echange --------------------*/
-
-	#bloc1
-	{
-		display: inline-block;
-		float: left;
-		width: 45%;
-	}
-
-	#bloc2
-	{
-		display: inline-block;
-		float: right;
-		width: 45%;
-	}
-
-	#affiche_echange
-	{
-        padding: 30px 30px 20px 30px;
-        color: #666;
-        border-radius: 5px;
-        background: #F8F8F8;
-		font-size: 1.2em;
-		display: inline-block;
-		width: 100%;
-		margin-top: 5%;
-	}
-	
-	#affiche_echange #bloc_echange .bloc_echange1 .bloc_echange2
-	{
-		width: 45%;
-        display: inline-block;
-		font-size: 5em;
-	}
-
-	#bloc_echange
-	{
-		margin-bottom: 5%;
-        display: inline-block;
-	}
-	
-	table
-	{
-		border-collapse: collapse;
-    	width: 40%;
-	}
-
-	.bloc_echange1
-	{
-		float: left;
-	}
-
-	.bloc_echange2
-	{
-		float: right;
-		
-	}
-
-	#bloc_commentaire
-	{	
-		width: 100%
-		display: inline-block;
-        border-top: 0.1em solid #808080 ;
-	}
-
 
     /* -------------------- Footer --------------------*/
 
@@ -1165,7 +1091,36 @@
        height: 40px;
         width: 40px; 
     }
-    
+    /* menu dérolant 
+
+       ul.niveau1
+      {display: none; 
+        position: absolute; 
+        left: 144px; 
+        top: -1px; 
+        margin:0px; 
+        padding: 0px; 
+        border: 1px solid grey;}
+
+      li.menu_deroulant
+      {list-style-type: none; 
+        position: relative; 
+        width: 140px; 
+        background-color: #E0E0E0; 
+        padding: 2px; 
+        margin: 0px}
+
+      li.menu_deroulant:hover {background-color: #FFFF70;}
+
+      li.menu_deroulant:hover ul.niveau2, li.menu_deroulant li.menu_deroulant:hover ul.niveau3 
+      {display: block}
+
+      li.plus {background-position:right; background-image: url(illustrations/fdroite.gif); background-repeat: no-repeat; border-bottom: 1px solid grey;}
+      */
+
+      #tableau_echange{
+        width: 30000px;
+      }
 
     /* ----------- surlignage fonction de recherche ----------- */
 
@@ -1200,6 +1155,7 @@
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         background: #F8F8F8;
+        margin-top: 1%;
     }
 
     h4
@@ -1258,13 +1214,84 @@
         margin-left: 20%;
     }
 
+    .centrage3
+    {
+        margin-left: 25%;
+        width: 50%;
+    }
+
 
     textarea
     {
         resize:none;
     }
     
-     /*-------------- ECHANGE -----------------------*/
+   /*-------------------- Echange --------------------*/
+
+	#bloc1
+	{
+		display: inline-block;
+		float: left;
+		width: 45%;
+	}
+
+	#bloc2
+	{
+		display: inline-block;
+		float: right;
+		width: 45%;
+	}
+
+	#affiche_echange
+	{
+        padding: 30px 30px 20px 30px;
+        color: #666;
+        border-radius: 5px;
+        background: #F8F8F8;
+		font-size: 1.2em;
+		display: inline-block;
+		width: 100%;
+		margin-top: 5%;
+	}
+	
+	#affiche_echange #bloc_echange .bloc_echange1 .bloc_echange2
+	{
+		width: 45%;
+        display: inline-block;
+		font-size: 5em;
+	}
+
+	#bloc_echange
+	{
+		margin-bottom: 5%;
+        display: inline-block;
+	}
+	
+	table
+	{
+		border-collapse: collapse;
+    	width: 40%;
+	}
+
+	.bloc_echange1
+	{
+		float: left;
+	}
+
+	.bloc_echange2
+	{
+		float: right;
+		
+	}
+
+	#bloc_commentaire
+	{	
+		width: 100%
+		display: inline-block;
+        border-top: 0.1em solid #808080 ;
+	}
+	
+	 /*-------------- ECHANGE -----------------------*/
 	#bloc_echange
         {
             width: 80%; /* +: plus large */
