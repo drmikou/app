@@ -894,7 +894,7 @@
         {
             width: 73%;
             margin-right: 15px;
-            background: url('images/fond1.8.png') ;
+	        background: #F8F8F8;
         }
 
         article2
@@ -947,13 +947,22 @@
         font-size: 0.9em;
     }
 
+    /*#fleche_bulle
+    {
+        position: absolute;
+        top: 100px;
+        left: -12px;
+
+            <img src="images/bulle.png" alt="" id="fleche_bulle" />  A mettre dans aside
+    }*/
+
 
     aside img
     {
         margin-left: 0px;
     }
-    
-    /*-------------------- Echange --------------------*/
+
+	/*-------------------- Echange --------------------*/
 
 	#bloc1
 	{
@@ -1158,7 +1167,6 @@
     }
     
 
-
     /* ----------- surlignage fonction de recherche ----------- */
 
     span.surlign2{
@@ -1256,3 +1264,21 @@
         resize:none;
     }
     
+     /*-------------- ECHANGE -----------------------*/
+	#bloc_echange
+        {
+            width: 80%; /* +: plus large */
+            margin-left: 10%	;
+            z-index: -1;
+            font-size: 0.9em;
+            padding-top: 0em;
+            padding-bottom: 1em;
+
+        }
+
+ 	article3
+        {
+            width: 70%;
+            margin-right: 15px;
+            background: url('images/fond1.8.png');
+        }
