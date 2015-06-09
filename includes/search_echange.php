@@ -14,10 +14,10 @@
 <?php
 	if (isset($_GET['barre_recherche']))	//On vérifie qu'il y a un echanges_prod2 dans la barre de recherche:
 	{
-		$reponse = $db->query('SELECT * FROM echanges');		// Initialisation de la variable réponse
+		$reponse = $db->query('SELECT * FROM echange ');		// Initialisation de la variable réponse
 		$barre_recherche = $_GET['barre_recherche'];						// On récupère tout le echanges_prod2 de la barre de recherche:
 		$s = explode(" ",$barre_recherche);								// On divise ce echanges_prod2 en mots
-		$request = "SELECT * FROM echanges";					// On récupère tout le echanges_prod2 de la table echange:
+		$request = "SELECT * FROM echange ";					// On récupère tout le echanges_prod2 de la table echange:
 		echo $request;
 
 		$i=0;
