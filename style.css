@@ -947,20 +947,77 @@
         font-size: 0.9em;
     }
 
-    /*#fleche_bulle
-    {
-        position: absolute;
-        top: 100px;
-        left: -12px;
-
-            <img src="images/bulle.png" alt="" id="fleche_bulle" />  A mettre dans aside
-    }*/
-
 
     aside img
     {
         margin-left: 0px;
     }
+    
+    /*-------------------- Echange --------------------*/
+
+	#bloc1
+	{
+		display: inline-block;
+		float: left;
+		width: 45%;
+	}
+
+	#bloc2
+	{
+		display: inline-block;
+		float: right;
+		width: 45%;
+	}
+
+	#affiche_echange
+	{
+        padding: 30px 30px 20px 30px;
+        color: #666;
+        border-radius: 5px;
+        background: #F8F8F8;
+		font-size: 1.2em;
+		display: inline-block;
+		width: 100%;
+		margin-top: 5%;
+	}
+	
+	#affiche_echange #bloc_echange .bloc_echange1 .bloc_echange2
+	{
+		width: 45%;
+        display: inline-block;
+		font-size: 5em;
+	}
+
+	#bloc_echange
+	{
+		margin-bottom: 5%;
+        display: inline-block;
+	}
+	
+	table
+	{
+		border-collapse: collapse;
+    	width: 40%;
+	}
+
+	.bloc_echange1
+	{
+		float: left;
+	}
+
+	.bloc_echange2
+	{
+		float: right;
+		
+	}
+
+	#bloc_commentaire
+	{	
+		width: 100%
+		display: inline-block;
+        border-top: 0.1em solid #808080 ;
+	}
+
 
     /* -------------------- Footer --------------------*/
 
@@ -1099,36 +1156,8 @@
        height: 40px;
         width: 40px; 
     }
-    /* menu dérolant 
+    
 
-       ul.niveau1
-      {display: none; 
-        position: absolute; 
-        left: 144px; 
-        top: -1px; 
-        margin:0px; 
-        padding: 0px; 
-        border: 1px solid grey;}
-
-      li.menu_deroulant
-      {list-style-type: none; 
-        position: relative; 
-        width: 140px; 
-        background-color: #E0E0E0; 
-        padding: 2px; 
-        margin: 0px}
-
-      li.menu_deroulant:hover {background-color: #FFFF70;}
-
-      li.menu_deroulant:hover ul.niveau2, li.menu_deroulant li.menu_deroulant:hover ul.niveau3 
-      {display: block}
-
-      li.plus {background-position:right; background-image: url(illustrations/fdroite.gif); background-repeat: no-repeat; border-bottom: 1px solid grey;}
-      */
-
-      #tableau_echange{
-        width: 30000px;
-      }
 
     /* ----------- surlignage fonction de recherche ----------- */
 
@@ -1227,22 +1256,3 @@
         resize:none;
     }
     
-     /*-------------- ECHANGE -----------------------*/
-	#bloc_echange
-        {
-            width: 70%; /* +: plus large */
-            margin: auto;
-            z-index: -1;
-            font-size: 0.9em;
-            padding-top: 0em;
-            padding-bottom: 1em;
-            float:right;
-
-        }
-
- 	article3
-        {
-            width: 70%;
-            margin-right: 15px;
-            background: url('images/fond1.8.png');
-        }
